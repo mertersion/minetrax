@@ -200,6 +200,7 @@ return [
 
     'locale_keymap' => [
         'en' => ['name' => 'English', 'iso_code' => 'us', 'display' => 'English'],
+        'ar' => ['name' => 'Arabic', 'iso_code' => 'sa', 'display' => 'العربية'],
         'de' => ['name' => 'German', 'iso_code' => 'de', 'display' => 'Deutsch'],
         'es' => ['name' => 'Spanish', 'iso_code' => 'es', 'display' => 'Español'],
         'fr' => ['name' => 'French', 'iso_code' => 'fr', 'display' => 'Français'],
