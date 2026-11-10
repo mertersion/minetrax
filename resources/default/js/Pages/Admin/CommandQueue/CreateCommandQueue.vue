@@ -162,7 +162,7 @@ const submitRunCommandForm = () => {
                         </div>
                         <div
                           v-if="form.scope === 'global'"
-                          class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"
+                          class="absolute top-2 end-2 w-2 h-2 rounded-full bg-primary"
                         />
                       </TabsTrigger>
 
@@ -189,7 +189,7 @@ const submitRunCommandForm = () => {
                         </div>
                         <div
                           v-if="form.scope === 'player'"
-                          class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"
+                          class="absolute top-2 end-2 w-2 h-2 rounded-full bg-primary"
                         />
                       </TabsTrigger>
                     </TabsList>
@@ -234,14 +234,14 @@ const submitRunCommandForm = () => {
                     <h3 class="text-sm font-semibold text-foreground">
                       {{ __("Available Placeholders") }}
                     </h3>
-                    <ul class="text-sm text-right text-muted-foreground mt-1 space-y-1">
+                    <ul class="text-sm text-end text-muted-foreground mt-1 space-y-1">
                       <li>
                         <code class="text-xs bg-background px-1.5 py-0.5 rounded font-mono">{PLAYER_USERNAME}</code>
-                        <span class="ml-1">- {{ __("Username of the player.") }}</span>
+                        <span class="ms-1">- {{ __("Username of the player.") }}</span>
                       </li>
                       <li>
                         <code class="text-xs bg-background px-1.5 py-0.5 rounded font-mono">{PLAYER_UUID}</code>
-                        <span class="ml-1">- {{ __("Unique Id of the player.") }}</span>
+                        <span class="ms-1">- {{ __("Unique Id of the player.") }}</span>
                       </li>
                     </ul>
                   </div>
@@ -356,7 +356,7 @@ const submitRunCommandForm = () => {
               >
                 <svg
                   v-if="form.processing"
-                  class="animate-spin -ml-1 mr-2 h-4 w-4"
+                  class="animate-spin -ms-1 me-2 h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

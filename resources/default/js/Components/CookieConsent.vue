@@ -8,7 +8,7 @@
         {{ __("We use cookies to enhance your browsing experience. By continuing, you consent to our cookie policy.") }}
       </span>
       <button
-        class="text-primary cursor-pointer ml-0.5 hover:text-primary"
+        class="text-primary cursor-pointer ms-0.5 hover:text-primary"
         @click.prevent="close"
       >
         {{ __("I Understand") }}

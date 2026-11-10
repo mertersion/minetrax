@@ -8,7 +8,7 @@
       v-tippy
       :title="__('Administration Section')"
       aria-label="Open Menu"
-      class="ml-2 focus:outline-hidden"
+      class="ms-2 focus:outline-hidden"
       :href="route('admin.dashboard')"
     >
       <Icon

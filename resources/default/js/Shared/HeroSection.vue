@@ -50,7 +50,7 @@
           @click="isSupported && copy(server ? server.hostname : $page.props.defaultQueryServer?.server?.hostname)"
         >
           <svg
-            class="w-12 h-12 text-primary shrink-0 mr-3"
+            class="w-12 h-12 text-primary shrink-0 me-3"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
           </svg>
           <div class="flex flex-col">
             <p
-              class="font-bold text-left"
+              class="font-bold text-start"
             >
               <span
                 v-if="!loading && !error"
@@ -107,7 +107,7 @@
           class="justify-center hidden basis-1/4 hover:rainbow md:flex hover:scale-110 transition ease-in-out duration-500"
         >
           <div class="flex flex-col">
-            <p class="font-bold text-right uppercase text-primary">
+            <p class="font-bold text-end uppercase text-primary">
               {{ discordUsersCount }} {{ __("Online") }}
             </p>
             <span
@@ -117,7 +117,7 @@
             </span>
           </div>
           <svg
-            class="w-11 h-11 text-primary shrink-0 ml-3"
+            class="w-11 h-11 text-primary shrink-0 ms-3"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"

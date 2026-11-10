@@ -55,7 +55,7 @@ const options = ref({
       <h3 class="font-extrabold text-foreground flex items-center">
         <Icon
           name="ram"
-          class="w-6 mr-2"
+          class="w-6 me-2"
         />
         {{ __("Memory Usage") }}
       </h3>

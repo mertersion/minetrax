@@ -33,13 +33,13 @@ const punishmentHistoryHeaders = [
         key:"id",
         label: __("#"),
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
     },
     {
         key:"country_id",
         label:"",
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
     },
     {
         key:"type.value",
@@ -92,7 +92,7 @@ const punishmentHistoryHeaders = [
         key:"actions",
         label:"",
         sortable: false,
-        class:"w-1 text-right",
+        class:"w-1 text-end",
     },
 ];
 
@@ -101,13 +101,13 @@ const sessionHeaders = [
         key:"id",
         label: __("ID"),
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
     },
     {
         key:"country_id",
         label: __("Flag"),
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
     },
     {
         key:"player_displayname",
@@ -139,19 +139,19 @@ const sessionHeaders = [
         key:"play_time",
         label: __("Play Time"),
         sortable: true,
-        class:"text-right",
+        class:"text-end",
     },
     {
         key:"afk_time",
         label: __("Afk Time"),
         sortable: true,
-        class:"text-right",
+        class:"text-end",
     },
     {
         key:"actions",
         label:"",
         sortable: false,
-        class:"w-1 text-right",
+        class:"w-1 text-end",
     },
 ];
 
@@ -250,7 +250,7 @@ const breadcrumbItems = [
               })
             }}
           </h1>
-          <span class="ml-3 text-lg">
+          <span class="ms-3 text-lg">
             <CommonStatusBadge :status="punishment.type.value" />
             <CommonStatusBadge :status="punishment.is_active ?'active':'inactive'" />
             <CommonStatusBadge
@@ -316,7 +316,7 @@ const breadcrumbItems = [
                         alt=""
                       >
                     </div>
-                    <div class="ml-2">
+                    <div class="ms-2">
                       <Link
                         v-tippy
                         as="a"
@@ -345,7 +345,7 @@ const breadcrumbItems = [
                         alt=""
                       >
                     </div>
-                    <div class="ml-2">
+                    <div class="ms-2">
                       <div
                         v-tippy
                         class="font-medium text-foreground"
@@ -405,7 +405,7 @@ const breadcrumbItems = [
                   <img
                     :src="punishment.country.photo_path"
                     :alt="punishment.country.iso_code"
-                    class="w-8 h-8 mr-2"
+                    class="w-8 h-8 me-2"
                   >
                   {{ punishment.country.name }}
                 </div>
@@ -483,7 +483,7 @@ const breadcrumbItems = [
                           alt=""
                         >
                       </div>
-                      <div class="ml-2">
+                      <div class="ms-2">
                         <Link
                           v-tippy
                           as="a"
@@ -543,7 +543,7 @@ const breadcrumbItems = [
                             alt=""
                           >
                         </div>
-                        <div class="ml-2">
+                        <div class="ms-2">
                           <Link
                             v-tippy
                             as="a"
@@ -688,7 +688,7 @@ const breadcrumbItems = [
                       "
                     >
                       <XCircleIcon
-                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-destructive absolute -top-2 -right-2 w-5 h-5 p-0.5 text-foreground cursor-pointer"
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-destructive absolute -top-2 -end-2 w-5 h-5 p-0.5 text-foreground cursor-pointer"
                       />
                     </Link>
                   </div>
@@ -882,7 +882,7 @@ const breadcrumbItems = [
                           alt=""
                         >
                       </div>
-                      <div class="ml-2">
+                      <div class="ms-2">
                         <Link
                           v-tippy
                           as="a"
@@ -911,7 +911,7 @@ const breadcrumbItems = [
                           alt=""
                         >
                       </div>
-                      <div class="ml-2">
+                      <div class="ms-2">
                         <div
                           v-tippy
                           class="text-sm font-medium text-foreground"
@@ -966,7 +966,7 @@ const breadcrumbItems = [
                           alt=""
                         >
                       </div>
-                      <div class="ml-2">
+                      <div class="ms-2">
                         <Link
                           v-tippy
                           as="a"
@@ -1049,7 +1049,7 @@ const breadcrumbItems = [
                   <CommonStatusBadge :status="item.is_active ?'active':'inactive'" />
                 </DtRowItem>
 
-                <td class="px-6 py-4 space-x-2 text-sm font-medium text-right whitespace-nowrap">
+                <td class="px-6 py-4 space-x-2 text-sm font-medium text-end whitespace-nowrap">
                   <Link
                     v-tippy
                     :title="__('View details')"
@@ -1159,11 +1159,11 @@ const breadcrumbItems = [
                   </span>
                 </DtRowItem>
 
-                <DtRowItem class="text-right">
+                <DtRowItem class="text-end">
                   {{ secondsToHMS(item.play_time, true) }}
                 </DtRowItem>
 
-                <DtRowItem class="text-right">
+                <DtRowItem class="text-end">
                   {{ secondsToHMS(item.afk_time, true) }}
                 </DtRowItem>
 

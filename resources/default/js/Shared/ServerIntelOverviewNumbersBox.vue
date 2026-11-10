@@ -45,7 +45,7 @@ onMounted(async () => {
   <Card class="w-full h-full">
     <CardContent class="p-4">
       <h3 class="font-extrabold text-foreground flex mt-2 items-center">
-        <QrCodeIcon class="w-6 mr-2" />
+        <QrCodeIcon class="w-6 me-2" />
         {{ __("Numbers") }}
       </h3>
 
@@ -65,29 +65,29 @@ onMounted(async () => {
             <tr>
               <th
                 scope="col"
-                class="text-left p-2"
+                class="text-start p-2"
               />
               <th
                 scope="col"
-                class="text-left p-2"
+                class="text-start p-2"
               >
                 {{ __("Last 24 hours") }}
               </th>
               <th
                 scope="col"
-                class="text-left p-2"
+                class="text-start p-2"
               >
                 {{ __("Last 7 days") }}
               </th>
               <th
                 scope="col"
-                class="text-left p-2"
+                class="text-start p-2"
               >
                 {{ __("Last 30 days") }}
               </th>
               <th
                 scope="col"
-                class="text-left p-2"
+                class="text-start p-2"
               >
                 {{ __("All Time") }}
               </th>
@@ -97,7 +97,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <UserGroupIcon
-                  class="w-5 text-primary mr-1"
+                  class="w-5 text-primary me-1"
                 />
                 {{ __("Total Players") }}
               </td>
@@ -118,7 +118,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <ClockIcon
-                  class="w-5 text-success mr-1"
+                  class="w-5 text-success me-1"
                 />
                 {{ __("Total Play Time") }}
               </td>
@@ -139,7 +139,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <ClockIcon
-                  class="w-5 text-destructive mr-1"
+                  class="w-5 text-destructive me-1"
                 />
                 {{ __("Total Afk Time") }}
               </td>
@@ -160,7 +160,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <UsersIcon
-                  class="w-5 text-success mr-1"
+                  class="w-5 text-success me-1"
                 />
                 {{ __("Total Sessions") }}
               </td>
@@ -181,7 +181,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <UsersIcon
-                  class="w-5 text-lime-500 mr-1"
+                  class="w-5 text-lime-500 me-1"
                 />
                 {{ __("Avg Session / Player") }}
               </td>
@@ -202,7 +202,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <ClockIcon
-                  class="w-5 text-amber-500 mr-1"
+                  class="w-5 text-amber-500 me-1"
                 />
                 {{ __("Avg Session Playtime") }}
               </td>
@@ -223,7 +223,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <FireIcon
-                  class="w-5 text-pink-500 mr-1"
+                  class="w-5 text-pink-500 me-1"
                 />
                 {{ __("Total Player Kills") }}
               </td>
@@ -244,7 +244,7 @@ onMounted(async () => {
             <tr>
               <td class="p-2 flex">
                 <FireIcon
-                  class="w-5 text-success mr-1"
+                  class="w-5 text-success me-1"
                 />
                 {{ __("Total Mob Kills") }}
               </td>
@@ -266,7 +266,7 @@ onMounted(async () => {
               <td class="p-2 flex">
                 <icon
                   name="skull-outline"
-                  class="w-5 text-destructive mr-1"
+                  class="w-5 text-destructive me-1"
                 />
                 {{ __("Total Deaths") }}
               </td>

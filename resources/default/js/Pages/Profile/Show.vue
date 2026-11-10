@@ -28,46 +28,46 @@
                 <TabsTrigger
                   v-if="pageProps.jetstream.canUpdateProfileInformation"
                   value="profile"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Profile") }}
                 </TabsTrigger>
                 <TabsTrigger
                   value="notifications"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Notifications") }}
                 </TabsTrigger>
                 <TabsTrigger
                   value="social-accounts"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Social Accounts") }}
                 </TabsTrigger>
                 <TabsTrigger
                   v-if="pageProps.jetstream.canUpdatePassword"
                   value="password"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Change Password") }}
                 </TabsTrigger>
                 <TabsTrigger
                   v-if="pageProps.jetstream.canManageTwoFactorAuthentication"
                   value="two-factor"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Two Factor") }}
                 </TabsTrigger>
                 <TabsTrigger
                   value="sessions"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Sessions") }}
                 </TabsTrigger>
                 <TabsTrigger
                   v-if="pageProps.jetstream.hasAccountDeletionFeatures"
                   value="delete-account"
-                  class="w-full justify-start py-2 md:px-4 md:py-3 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+                  class="w-full justify-start py-2 md:px-4 md:py-3 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
                 >
                   {{ __("Delete Account") }}
                 </TabsTrigger>

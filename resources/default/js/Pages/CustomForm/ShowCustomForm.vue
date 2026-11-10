@@ -154,7 +154,7 @@ const disabledErrorMessage = computed(() => {
 
               <p
                 v-if="!formDisabled && customForm.max_submission_per_user"
-                class="text-xs text-muted-foreground text-right"
+                class="text-xs text-muted-foreground text-end"
               >
                 {{ __("You can submit this form only :count times.", {
                   count: customForm.max_submission_per_user

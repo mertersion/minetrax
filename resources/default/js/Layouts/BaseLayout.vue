@@ -26,7 +26,7 @@ const title = ref("MineTrax");
       :title="__('Leave Impersonation')"
       as="a"
       :href="route('admin.impersonate.leave')"
-      class="fixed flex p-2 text-white bg-destructive rounded-full bottom-4 hover:bg-destructive/90 right-4 z-50"
+      class="fixed flex p-2 text-white bg-destructive rounded-full bottom-4 hover:bg-destructive/90 end-4 z-50"
     >
       <icon
         name="ban"

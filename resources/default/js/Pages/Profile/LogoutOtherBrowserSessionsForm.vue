@@ -58,7 +58,7 @@
           </svg>
         </div>
 
-        <div class="ml-3">
+        <div class="ms-3">
           <div class="text-sm font-medium text-foreground">
             {{ session.agent.platform }} - {{ session.agent.browser }}
           </div>

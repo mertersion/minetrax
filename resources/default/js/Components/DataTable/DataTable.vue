@@ -156,14 +156,14 @@ function toggleSorting(key) {
       >
         <div id="searchBox">
           <div class="relative mt-1">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <MagnifyingGlassIcon class="w-4 h-4 text-muted-foreground stroke-2" />
             </div>
             <input
               id="table-search"
               v-model="filters.filter.q"
               type="text"
-              class="block p-2 text-sm text-foreground border border-input rounded-lg pl-9 md:w-80 bg-background focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              class="block p-2 text-sm text-foreground border border-input rounded-lg ps-9 md:w-80 bg-background focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
               :placeholder="__('Search..')"
             >
           </div>
@@ -203,7 +203,7 @@ function toggleSorting(key) {
                       v-for="th in header"
                       :key="th.key"
                       scope="col"
-                      class="px-4 py-3 text-xs font-semibold text-left text-muted-foreground"
+                      class="px-4 py-3 text-xs font-semibold text-start text-muted-foreground"
                       :class="[th.class ? th.class : '']"
                     >
                       <div class="inline-flex items-center">
@@ -216,12 +216,12 @@ function toggleSorting(key) {
                             <Icon
                               v-if="Array.isArray(th.filterable) ? th.filterable.some((filter) => filters.filter[filter.key ?? th.key]) : filters.filter[th.filterable.key ?? th.key]"
                               name="funnel-fill"
-                              class="inline-block h-4 mr-1 text-primary cursor-pointer hover:text-primary/80"
+                              class="inline-block h-4 me-1 text-primary cursor-pointer hover:text-primary/80"
                             />
                             <Icon
                               v-else
                               name="funnel-outline"
-                              class="inline-block h-4 mr-1 text-muted-foreground cursor-pointer hover:text-foreground"
+                              class="inline-block h-4 me-1 text-muted-foreground cursor-pointer hover:text-foreground"
                             />
                           </PopoverTrigger>
 
@@ -332,7 +332,7 @@ function toggleSorting(key) {
                           <Icon
                             v-if="th.sortable"
                             :name="sortedField === th.key ? (sortedDirection === 'asc' ? 'sort-up' : 'sort-down') : 'sort-updown'"
-                            class="inline-block w-3 h-3 ml-1 text-muted-foreground"
+                            class="inline-block w-3 h-3 ms-1 text-muted-foreground"
                             :class="[sortedField === th.key ? 'text-primary' : '']"
                           />
                         </div>
@@ -383,7 +383,7 @@ function toggleSorting(key) {
         </InertiaLink>
         <InertiaLink
           :href="data.next_page_url ?? '#'"
-          class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-secondary-foreground bg-secondary border border-border rounded-md hover:bg-secondary/80"
+          class="relative inline-flex items-center px-4 py-2 ms-3 text-sm font-medium text-secondary-foreground bg-secondary border border-border rounded-md hover:bg-secondary/80"
         >
           {{ __("Next") }}
         </InertiaLink>
@@ -413,7 +413,7 @@ function toggleSorting(key) {
           </div>
           <p
             v-if="data.total != undefined"
-            class="ml-2 text-sm text-foreground"
+            class="ms-2 text-sm text-foreground"
           >
             {{ __("Showing") }}
             <span class="font-semibold">{{ data.from ?? 0 }}</span>

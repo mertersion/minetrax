@@ -170,7 +170,7 @@ const breadcrumbItems = computed(() => [
                       :href="route('user.public.get', submission.user.username)"
                       class="flex items-center"
                     >
-                      <div class="shrink-0 h-10 w-10 mr-2">
+                      <div class="shrink-0 h-10 w-10 me-2">
                         <img
                           class="h-10 w-10 rounded-full"
                           :src="submission.user.profile_photo_url"

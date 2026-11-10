@@ -27,7 +27,7 @@
       <span class="text-lg mt-10 font-extrabold text-primary mb-4 flex items-center">
         <icon
           name="spin-loader"
-          class="h-7 w-7 animate-spin mr-1"
+          class="h-7 w-7 animate-spin me-1"
         /> {{ __("In Progress") }}
       </span>
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -45,7 +45,7 @@
           name="heart-fill"
         />
         <icon
-          class="w-7 h-7 relative inline-flex mr-1"
+          class="w-7 h-7 relative inline-flex me-1"
           name="heart-fill"
         />
         {{ __("Draft") }}

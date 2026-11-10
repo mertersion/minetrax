@@ -73,7 +73,7 @@ const getContrastingTextColor = (hexcolor) => {
                     <UserDisplayname
                       :user="staff"
                       text-class="text-xl font-semibold"
-                      icon-class="w-5 h-5 ml-2"
+                      icon-class="w-5 h-5 ms-2"
                     />
                   </h3>
                   <div class="mt-1">

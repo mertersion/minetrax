@@ -110,7 +110,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Server") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.server.name }}
                   </td>
                 </tr>
@@ -118,7 +118,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Country") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.country.name }}
                   </td>
                 </tr>
@@ -126,7 +126,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Username") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.player_username }}
                   </td>
                 </tr>
@@ -134,7 +134,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Displayname") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.player_displayname }}
                   </td>
                 </tr>
@@ -142,7 +142,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Started At") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     <span
                       v-tippy
                       class="whitespace-nowrap cursor-help"
@@ -164,7 +164,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Ended At") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     <span
                       v-if="session.session_ended_at"
                       v-tippy
@@ -191,7 +191,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Play Time") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ secondsToHMS(session.play_time, true) }}
                   </td>
                 </tr>
@@ -199,7 +199,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Active Time") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ secondsToHMS(activeTime, true) }}
                   </td>
                 </tr>
@@ -207,7 +207,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Afk Time") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ secondsToHMS(session.afk_time, true) }}
                   </td>
                 </tr>
@@ -215,7 +215,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Pvp Damage Given") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.pvp_damage_given }}
                   </td>
                 </tr>
@@ -223,7 +223,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Pvp Damage Taken") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.pvp_damage_taken }}
                   </td>
                 </tr>
@@ -231,7 +231,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Fish Caught") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.fish_caught }}
                   </td>
                 </tr>
@@ -239,7 +239,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Raids Won") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.raids_won }}
                   </td>
                 </tr>
@@ -247,7 +247,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Times Slept") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.times_slept_in_bed }}
                   </td>
                 </tr>
@@ -255,7 +255,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Enchanted") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_enchanted }}
                   </td>
                 </tr>
@@ -267,7 +267,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Player Kills") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.player_kills }}
                   </td>
                 </tr>
@@ -275,7 +275,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Mob Kills") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.mob_kills }}
                   </td>
                 </tr>
@@ -283,7 +283,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Deaths") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ session.deaths }}
                   </td>
                 </tr>
@@ -291,7 +291,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Used") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_used }}
                   </td>
                 </tr>
@@ -299,7 +299,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Mined") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_mined }}
                   </td>
                 </tr>
@@ -307,7 +307,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Pickedup") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_picked_up }}
                   </td>
                 </tr>
@@ -315,7 +315,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Dropped") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_dropped }}
                   </td>
                 </tr>
@@ -323,7 +323,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Consumed") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_consumed }}
                   </td>
                 </tr>
@@ -331,7 +331,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Broken") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_broken }}
                   </td>
                 </tr>
@@ -339,7 +339,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Crafted") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_crafted }}
                   </td>
                 </tr>
@@ -347,7 +347,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Items Placed") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ eventCounts.items_placed }}
                   </td>
                 </tr>
@@ -355,7 +355,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Distance Traveled") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ millify(eventCounts.distance_traveled) }}
                     {{ __("meters") }}
                   </td>
@@ -364,7 +364,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Distance Traveled on Land") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{
                       millify(
                         eventCounts.distance_traveled_on_land
@@ -377,7 +377,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Distance Traveled on Air") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{
                       millify(
                         eventCounts.distance_traveled_on_air
@@ -390,7 +390,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Distance Traveled on Water") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{
                       millify(
                         eventCounts.distance_traveled_on_water
@@ -422,7 +422,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("IP Address") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     <a
                       class="hover:text-primary hover:underline filter blur-sm hover:blur-none duration-300"
                       target="_blank"
@@ -436,7 +436,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Join Address") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.join_address }}
                   </td>
                 </tr>
@@ -444,7 +444,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Minecraft Version") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.minecraft_version }}
                   </td>
                 </tr>
@@ -452,7 +452,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Player Ping") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.player_ping }}
                   </td>
                 </tr>
@@ -460,7 +460,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Vault Balance") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ millify(criticalInfo.vault_balance, {
                       precision: 2,
                     }) }}
@@ -474,7 +474,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Kicked") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.is_kicked }}
                   </td>
                 </tr>
@@ -482,7 +482,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Banned") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.is_banned }}
                   </td>
                 </tr>
@@ -490,7 +490,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Oped") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.is_op }}
                   </td>
                 </tr>
@@ -498,7 +498,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("Vault Groups") }}
                   </td>
-                  <td class="py-2 text-right font-bold">
+                  <td class="py-2 text-end font-bold">
                     {{ criticalInfo.vault_groups }}
                   </td>
                 </tr>
@@ -506,7 +506,7 @@ const breadcrumbItems = [
                   <td class="py-2 text-muted-foreground font-medium whitespace-nowrap">
                     {{ __("World Location") }}
                   </td>
-                  <td class="py-2 text-right font-bold filter blur-sm hover:blur-none duration-300">
+                  <td class="py-2 text-end font-bold filter blur-sm hover:blur-none duration-300">
                     {{ worldLocation }}
                   </td>
                 </tr>

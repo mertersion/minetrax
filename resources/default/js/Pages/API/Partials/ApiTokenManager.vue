@@ -124,7 +124,7 @@ const deleteApiToken = () => {
                   v-model:checked="createApiTokenForm.permissions"
                   :value="permission"
                 />
-                <span class="ml-2 text-sm text-foreground">{{ permission }}</span>
+                <span class="ms-2 text-sm text-foreground">{{ permission }}</span>
               </label>
             </div>
           </div>
@@ -134,7 +134,7 @@ const deleteApiToken = () => {
       <template #actions>
         <JetActionMessage
           :on="createApiTokenForm.recentlySuccessful"
-          class="mr-3"
+          class="me-3"
         >
           Created.
         </JetActionMessage>
@@ -184,14 +184,14 @@ const deleteApiToken = () => {
 
                   <button
                     v-if="availablePermissions.length > 0"
-                    class="cursor-pointer ml-6 text-sm text-foreground underline"
+                    class="cursor-pointer ms-6 text-sm text-foreground underline"
                     @click="manageApiTokenPermissions(token)"
                   >
                     Permissions
                   </button>
 
                   <button
-                    class="cursor-pointer ml-6 text-sm text-destructive"
+                    class="cursor-pointer ms-6 text-sm text-destructive"
                     @click="confirmApiTokenDeletion(token)"
                   >
                     Delete
@@ -253,7 +253,7 @@ const deleteApiToken = () => {
                 v-model:checked="updateApiTokenForm.permissions"
                 :value="permission"
               />
-              <span class="ml-2 text-sm text-foreground">{{ permission }}</span>
+              <span class="ms-2 text-sm text-foreground">{{ permission }}</span>
             </label>
           </div>
         </div>
@@ -265,7 +265,7 @@ const deleteApiToken = () => {
         </JetSecondaryButton>
 
         <JetButton
-          class="ml-3"
+          class="ms-3"
           :class="{'opacity-25': updateApiTokenForm.processing }"
           :disabled="updateApiTokenForm.processing"
           @click="updateApiToken"
@@ -294,7 +294,7 @@ const deleteApiToken = () => {
         </JetSecondaryButton>
 
         <JetDangerButton
-          class="ml-3"
+          class="ms-3"
           :class="{'opacity-25': deleteApiTokenForm.processing }"
           :disabled="deleteApiTokenForm.processing"
           @click="deleteApiToken"

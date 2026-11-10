@@ -130,7 +130,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-2/12 text-right",
+        class:"w-2/12 text-end",
     },
 ];
 </script>
@@ -248,7 +248,7 @@ const headerRow = [
             >{{ __("None") }}</span>
           </td>
 
-          <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+          <td class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap">
             <ButtonGroup>
               <Button
                 variant="outline"

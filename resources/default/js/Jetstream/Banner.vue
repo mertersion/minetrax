@@ -57,15 +57,15 @@ watch(message, async () => {
               </svg>
             </span>
 
-            <p class="ml-3 font-medium text-sm text-white truncate">
+            <p class="ms-3 font-medium text-sm text-white truncate">
               {{ message }}
             </p>
           </div>
 
-          <div class="shrink-0 sm:ml-3">
+          <div class="shrink-0 sm:ms-3">
             <button
               type="button"
-              class="-mr-1 flex p-2 rounded-md focus:outline-hidden sm:-mr-2 transition"
+              class="-me-1 flex p-2 rounded-md focus:outline-hidden sm:-me-2 transition"
               :class="{'hover:bg-primary focus:bg-primary': style =='success','hover:bg-destructive/90 focus:bg-destructive': style =='danger'}"
               aria-label="Dismiss"
               @click.prevent="show = false"

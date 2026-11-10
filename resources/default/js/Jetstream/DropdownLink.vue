@@ -24,8 +24,8 @@ const classes = computed(() => {
 
 const buttonClasses = computed(() => {
     return props.active
-        ? "block w-full px-4 py-2 text-sm leading-5 text-accent-foreground text-left bg-accent/50 hover:bg-accent hover:text-accent-foreground focus:outline-hidden focus:bg-accent focus:text-accent-foreground transition duration-150 ease-in-out"
-        : "block w-full px-4 py-2 text-sm leading-5 text-foreground text-left hover:bg-accent hover:text-accent-foreground focus:outline-hidden focus:bg-accent focus:text-accent-foreground transition duration-150 ease-in-out";
+        ? "block w-full px-4 py-2 text-sm leading-5 text-accent-foreground text-start bg-accent/50 hover:bg-accent hover:text-accent-foreground focus:outline-hidden focus:bg-accent focus:text-accent-foreground transition duration-150 ease-in-out"
+        : "block w-full px-4 py-2 text-sm leading-5 text-foreground text-start hover:bg-accent hover:text-accent-foreground focus:outline-hidden focus:bg-accent focus:text-accent-foreground transition duration-150 ease-in-out";
 });
 </script>
 

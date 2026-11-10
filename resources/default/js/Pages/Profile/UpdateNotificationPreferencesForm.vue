@@ -25,7 +25,7 @@
                   {{ __("Get notified when someone comments on your posts") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -60,7 +60,7 @@
                   {{ __("Get notified when someone likes your posts") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -95,7 +95,7 @@
                   {{ __("Get notified when staff mutes your account") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -129,7 +129,7 @@
                   {{ __("Get notified when staff bans your account") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -164,7 +164,7 @@
                   {{ __("Get notified when your application status is updated") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -198,7 +198,7 @@
                   {{ __("Get notified when someone comments on your application") }}
                 </p>
               </div>
-              <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+              <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                 <div class="flex items-center gap-2">
                   <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                   <Switch
@@ -249,7 +249,7 @@
                       {{ __("Get notified when new applications are submitted") }}
                     </p>
                   </div>
-                  <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+                  <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                     <div class="flex items-center gap-2">
                       <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                       <Switch
@@ -284,7 +284,7 @@
                       {{ __("Get notified when users submit custom forms") }}
                     </p>
                   </div>
-                  <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+                  <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                     <div class="flex items-center gap-2">
                       <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                       <Switch
@@ -319,7 +319,7 @@
                       {{ __("Get notified when users comment on news posts") }}
                     </p>
                   </div>
-                  <div class="flex items-center gap-2 sm:gap-4 ml-2 sm:ml-4 shrink-0">
+                  <div class="flex items-center gap-2 sm:gap-4 ms-2 sm:ms-4 shrink-0">
                     <div class="flex items-center gap-2">
                       <EnvelopeIcon class="w-5 h-5 text-muted-foreground" />
                       <Switch

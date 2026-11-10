@@ -39,7 +39,7 @@
         <div
           v-for="pl of playersList"
           :key="pl.uuid"
-          class="shrink-0 mr-1 mb-1"
+          class="shrink-0 me-1 mb-1"
           :class="sizeClass"
         >
           <img

@@ -9,7 +9,7 @@
       {{ label }}
       <span
         v-if="required"
-        class="text-destructive ml-1"
+        class="text-destructive ms-1"
       >*</span>
     </Label>
 
@@ -221,7 +221,7 @@ const displayUrl = computed(() => {
 });
 
 // Delete/cross icon offset: allow flowing outside the rounded container when circular
-const iconPositionClass = computed(() => (props.shape === "circle" ? "-top-2 -right-2" : "top-2 right-2"));
+const iconPositionClass = computed(() => (props.shape === "circle" ? "-top-2 -end-2" : "top-2 end-2"));
 
 watch(internalValue, (val) => {
     localError.value = "";

@@ -29,7 +29,7 @@ defineProps({
       variant="warning"
     >
       <template #icon>
-        <EyeSlashIcon class="h-6 w-6 mr-4 text-yellow-500" />
+        <EyeSlashIcon class="h-6 w-6 me-4 text-yellow-500" />
       </template>
       {{ __("This news is not published") }}
       <template #body>

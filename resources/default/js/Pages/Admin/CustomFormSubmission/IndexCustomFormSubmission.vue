@@ -46,7 +46,7 @@ const headerRow = [
         key:"id",
         label: __("ID"),
         sortable: true,
-        class:"text-left w-[5%]",
+        class:"text-start w-[5%]",
         filterable: {
             key:"id",
             type:"text",
@@ -56,7 +56,7 @@ const headerRow = [
         key:"country_id",
         label: __("Country"),
         sortable: true,
-        class:"text-left w-1/12",
+        class:"text-start w-1/12",
     },
     {
         key:"user_id",
@@ -76,14 +76,14 @@ const headerRow = [
     {
         key:"created_at",
         label: __("Created At"),
-        class:"text-right w-1/12 whitespace-nowrap",
+        class:"text-end w-1/12 whitespace-nowrap",
         sortable: true,
     },
     {
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 
@@ -91,7 +91,7 @@ if (props.archived) {
     headerRow.splice(5, 0, {
         key:"deleted_at",
         label: __("Archived At"),
-        class:"text-right w-1/12 whitespace-nowrap",
+        class:"text-end w-1/12 whitespace-nowrap",
         sortable: true,
     });
 }
@@ -158,7 +158,7 @@ const breadcrumbItems = [
         >
           <template #default="{ item }">
             <td
-              class="text-sm px-4 font-medium text-left text-foreground whitespace-nowrap dark:text-foreground"
+              class="text-sm px-4 font-medium text-start text-foreground whitespace-nowrap dark:text-foreground"
             >
               {{ item.id }}
             </td>
@@ -187,7 +187,7 @@ const breadcrumbItems = [
                 :href="route('user.public.get', item.user.username)"
                 class="flex items-center"
               >
-                <div class="shrink-0 h-10 w-10 mr-2">
+                <div class="shrink-0 h-10 w-10 me-2">
                   <img
                     class="h-10 w-10 rounded-full"
                     :src="item.user.profile_photo_url"
@@ -220,7 +220,7 @@ const breadcrumbItems = [
 
             <DtRowItem
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.created_at)"
             >
               {{ formatTimeAgoToNow(item.created_at) }}
@@ -229,14 +229,14 @@ const breadcrumbItems = [
             <DtRowItem
               v-if="archived"
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.deleted_at)"
             >
               {{ formatTimeAgoToNow(item.deleted_at) }}
             </DtRowItem>
 
             <td
-              class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
             >
               <ButtonGroup>
                 <Button

@@ -45,7 +45,7 @@ const headerRow = [
         key: "id",
         label: __("ID"),
         sortable: true,
-        class: "text-left w-[5%]",
+        class: "text-start w-[5%]",
     },
     {
         key: "recruitment_id",
@@ -56,7 +56,7 @@ const headerRow = [
         key: "status",
         label: __("Status"),
         sortable: true,
-        class: "text-right w-1/12 whitespace-nowrap",
+        class: "text-end w-1/12 whitespace-nowrap",
         filterable: {
             type: "multiselect",
             options: ["pending", "inprogress", "approved", "rejected", "withdrawn", "onhold"],
@@ -65,20 +65,20 @@ const headerRow = [
     {
         key: "created_at",
         label: __("Created At"),
-        class: "text-right w-1/12 whitespace-nowrap",
+        class: "text-end w-1/12 whitespace-nowrap",
         sortable: true,
     },
     {
         key: "updated_at",
         label: __("Last Updated At"),
-        class: "text-right w-1/12 whitespace-nowrap",
+        class: "text-end w-1/12 whitespace-nowrap",
         sortable: true,
     },
     {
         key: "actions",
         label: "",
         sortable: false,
-        class: "w-1/12 text-right",
+        class: "w-1/12 text-end",
     },
 ];
 
@@ -104,7 +104,7 @@ const headerRow = [
         >
           <template #default="{ item }">
             <td
-              class="text-sm px-4 font-medium text-left text-foreground whitespace-nowrap dark:text-foreground"
+              class="text-sm px-4 font-medium text-start text-foreground whitespace-nowrap dark:text-foreground"
             >
               {{ item.id }}
             </td>
@@ -119,7 +119,7 @@ const headerRow = [
 
             <DtRowItem
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.created_at)"
             >
               {{ formatTimeAgoToNow(item.created_at) }}
@@ -127,14 +127,14 @@ const headerRow = [
 
             <DtRowItem
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.updated_at)"
             >
               {{ formatTimeAgoToNow(item.updated_at) }}
             </DtRowItem>
 
             <td
-              class="px-6 py-4 space-x-2 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 space-x-2 text-sm font-medium text-end whitespace-nowrap"
             >
               <Button
                 v-tippy

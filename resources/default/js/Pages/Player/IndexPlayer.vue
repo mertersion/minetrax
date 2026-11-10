@@ -19,7 +19,7 @@
                       >
                         <Users2Icon class="w-6 h-6" />
                       </div>
-                      <div class="flex flex-col grow ml-4">
+                      <div class="flex flex-col grow ms-4">
                         <div class="text-sm text-muted-foreground">
                           {{ __("Total Players") }}
                         </div>
@@ -38,7 +38,7 @@
                       >
                         <Users2Icon class="w-6 h-6" />
                       </div>
-                      <div class="flex flex-col grow ml-4">
+                      <div class="flex flex-col grow ms-4">
                         <div class="text-sm text-muted-foreground">
                           {{ __("Active Players") }}
                         </div>
@@ -57,7 +57,7 @@
                       >
                         <PaperclipIcon class="w-6 h-6" />
                       </div>
-                      <div class="flex flex-col grow ml-4">
+                      <div class="flex flex-col grow ms-4">
                         <div class="text-sm text-muted-foreground">
                           {{ __("Linked Players") }}
                         </div>
@@ -76,7 +76,7 @@
                       >
                         <ClockIcon class="w-6 h-6" />
                       </div>
-                      <div class="flex flex-col grow ml-4">
+                      <div class="flex flex-col grow ms-4">
                         <div class="text-sm text-muted-foreground">
                           {{ __("Play Time") }}
                         </div>
@@ -98,7 +98,7 @@
                     >
                       <Users2Icon class="w-6 h-6" />
                     </div>
-                    <div class="flex flex-col grow ml-4">
+                    <div class="flex flex-col grow ms-4">
                       <div class="text-sm text-muted-foreground">
                         {{ __("Total Players") }}
                       </div>
@@ -119,7 +119,7 @@
                     >
                       <Users2Icon class="w-6 h-6" />
                     </div>
-                    <div class="flex flex-col grow ml-4">
+                    <div class="flex flex-col grow ms-4">
                       <div class="text-sm text-muted-foreground">
                         {{ __("Active Players") }}
                       </div>
@@ -140,7 +140,7 @@
                     >
                       <PaperclipIcon class="w-6 h-6" />
                     </div>
-                    <div class="flex flex-col grow ml-4">
+                    <div class="flex flex-col grow ms-4">
                       <div class="text-sm text-muted-foreground">
                         {{ __("Linked Players") }}
                       </div>
@@ -161,7 +161,7 @@
                     >
                       <ClockIcon class="w-6 h-6" />
                     </div>
-                    <div class="flex flex-col grow ml-4">
+                    <div class="flex flex-col grow ms-4">
                       <div class="text-sm text-muted-foreground">
                         {{ __("Play Time") }}
                       </div>
@@ -196,43 +196,43 @@
                     </th>
                     <th
                       scope="col"
-                      class="px-3 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-3 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Flag") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-3 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-3 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Rank") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-6 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Name") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-6 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Rating") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-6 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Score") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-6 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Time Played") }}
                     </th>
                     <th
                       scope="col"
-                      class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-muted-foreground"
+                      class="px-6 py-3 text-start text-xs font-bold uppercase tracking-wider text-muted-foreground"
                     >
                       {{ __("Last Seen") }}
                     </th>
@@ -315,7 +315,7 @@
                               alt=""
                             >
                           </div>
-                          <div class="ml-4">
+                          <div class="ms-4">
                             <inertia-link
                               as="a"
                               :href="route('player.show', player.uuid)"

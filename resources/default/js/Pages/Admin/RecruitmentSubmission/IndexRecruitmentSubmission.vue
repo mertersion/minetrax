@@ -43,7 +43,7 @@ const headerRow = [
         key:"id",
         label: __("ID"),
         sortable: true,
-        class:"text-left w-[5%]",
+        class:"text-start w-[5%]",
         filterable: {
             key:"id",
             type:"text",
@@ -77,7 +77,7 @@ const headerRow = [
         key:"last_act_at",
         sortable: true,
         label: __("Last Actor"),
-        class:"text-right",
+        class:"text-end",
         filterable: {
             key:"lastActor.name",
             type:"text",
@@ -87,7 +87,7 @@ const headerRow = [
         key:"last_comment_at",
         sortable: true,
         label: __("Last Comment"),
-        class:"text-right",
+        class:"text-end",
         filterable: {
             key:"lastCommentor.name",
             type:"text",
@@ -96,20 +96,20 @@ const headerRow = [
     {
         key:"created_at",
         label: __("Created At"),
-        class:"text-right w-1/12 whitespace-nowrap",
+        class:"text-end w-1/12 whitespace-nowrap",
         sortable: true,
     },
     {
         key:"updated_at",
         label: __("Updated At"),
-        class:"text-right w-1/12 whitespace-nowrap",
+        class:"text-end w-1/12 whitespace-nowrap",
         sortable: true,
     },
     {
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 
@@ -180,14 +180,14 @@ const breadcrumbItems = [
         >
           <template #default="{ item }">
             <td
-              class="text-sm px-4 font-medium text-left text-foreground whitespace-nowrap dark:text-foreground"
+              class="text-sm px-4 font-medium text-start text-foreground whitespace-nowrap dark:text-foreground"
             >
               {{ item.id }}
             </td>
 
             <td class="px-4">
               <div class="flex items-center">
-                <div class="shrink-0 h-10 w-10 mr-2">
+                <div class="shrink-0 h-10 w-10 me-2">
                   <img
                     class="h-10 w-10 rounded-full"
                     :src="item.user.profile_photo_url"
@@ -251,7 +251,7 @@ const breadcrumbItems = [
             </DtRowItem>
 
             <DtRowItem
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
             >
               <UserDisplayname
                 v-if="item.last_actor"
@@ -272,7 +272,7 @@ const breadcrumbItems = [
             </DtRowItem>
 
             <DtRowItem
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
             >
               <UserDisplayname
                 v-if="item.last_commentor"
@@ -294,7 +294,7 @@ const breadcrumbItems = [
 
             <DtRowItem
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.created_at)"
             >
               {{ formatTimeAgoToNow(item.created_at) }}
@@ -302,14 +302,14 @@ const breadcrumbItems = [
 
             <DtRowItem
               v-tippy
-              class="text-right whitespace-nowrap"
+              class="text-end whitespace-nowrap"
               :content="formatToDayDateString(item.updated_at)"
             >
               {{ formatTimeAgoToNow(item.updated_at) }}
             </DtRowItem>
 
             <td
-              class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
             >
               <ButtonGroup>
                 <Button

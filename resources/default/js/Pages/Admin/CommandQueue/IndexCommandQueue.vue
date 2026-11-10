@@ -116,7 +116,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 
@@ -168,15 +168,15 @@ const showDetails = (commandQueue) => {
             {{ item.id }}
           </td>
 
-          <DtRowItem class="text-left font-mono">
+          <DtRowItem class="text-start font-mono">
             {{ item.parsed_command }}
           </DtRowItem>
 
-          <DtRowItem class="text-left whitespace-nowrap">
+          <DtRowItem class="text-start whitespace-nowrap">
             {{ item.server.name }}
           </DtRowItem>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             <CommonStatusBadge :status="item.status.value" />
           </DtRowItem>
 
@@ -220,7 +220,7 @@ const showDetails = (commandQueue) => {
             </div>
           </DtRowItem>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             {{ item.tag ?? __("none") }}
           </DtRowItem>
 
@@ -251,7 +251,7 @@ const showDetails = (commandQueue) => {
             </div>
           </DtRowItem>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             <span
               v-if="item.output"
               class="truncate"
@@ -278,7 +278,7 @@ const showDetails = (commandQueue) => {
             </div>
           </DtRowItem>
 
-          <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+          <td class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap">
             <ButtonGroup>
               <Button
                 variant="outline"

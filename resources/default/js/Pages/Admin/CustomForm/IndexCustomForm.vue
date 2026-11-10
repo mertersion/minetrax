@@ -100,7 +100,7 @@ const headerRow = [
         key:"submissions_count",
         sortable: true,
         label: __("Total Submissions"),
-        class:"text-right whitespace-nowrap",
+        class:"text-end whitespace-nowrap",
     },
     {
         key:"created_at",
@@ -111,7 +111,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 </script>
@@ -204,7 +204,7 @@ const headerRow = [
             />
           </td>
 
-          <DtRowItem class="text-right">
+          <DtRowItem class="text-end">
             {{ item.submissions_count }}
           </DtRowItem>
 
@@ -218,7 +218,7 @@ const headerRow = [
           </DtRowItem>
 
           <td
-            class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+            class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
           >
             <ButtonGroup>
               <Button

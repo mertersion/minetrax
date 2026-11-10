@@ -32,19 +32,19 @@ const headerRow = [
         key: "download_count",
         label: __("Download Count"),
         sortable: true,
-        class: "text-right hidden md:table-cell"
+        class: "text-end hidden md:table-cell"
     },
     {
         key: "created_at",
         label: __("Added"),
         sortable: true,
-        class: "w-1/12 text-right hidden md:table-cell",
+        class: "w-1/12 text-end hidden md:table-cell",
     },
     {
         key: "actions",
         label: __("Actions"),
         sortable: false,
-        class: "w-1/12 text-right",
+        class: "w-1/12 text-end",
     },
 ];
 
@@ -85,11 +85,11 @@ const breadcrumbItems = [
               {{ item.name }}
             </DtRowItem>
 
-            <DtRowItem class="text-right hidden md:table-cell">
+            <DtRowItem class="text-end hidden md:table-cell">
               {{ item.download_count }}
             </DtRowItem>
 
-            <DtRowItem class="whitespace-nowrap text-right hidden md:table-cell">
+            <DtRowItem class="whitespace-nowrap text-end hidden md:table-cell">
               <span
                 v-tippy
                 :title="formatToDayDateString(item.created_at)"
@@ -99,7 +99,7 @@ const breadcrumbItems = [
             </DtRowItem>
 
             <td
-              class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
             >
               <ButtonGroup>
                 <Button

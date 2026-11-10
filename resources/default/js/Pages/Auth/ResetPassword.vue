@@ -47,7 +47,7 @@
         <div class="flex items-center justify-end mt-4">
           <loading-button
             :loading="form.processing"
-            class="ml-4"
+            class="ms-4"
           >
             {{ __("Reset Password") }}
           </loading-button>

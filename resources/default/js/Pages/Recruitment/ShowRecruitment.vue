@@ -308,7 +308,7 @@ watchEffect(() => {
                     recruitment.max_submission_per_user &&
                     userSubmissionsCount > 0
                 "
-                class="text-xs text-muted-foreground text-right"
+                class="text-xs text-muted-foreground text-end"
               >
                 {{
                   __(

@@ -9,7 +9,7 @@
       {{ label }}
       <span
         v-if="required"
-        class="text-destructive ml-1"
+        class="text-destructive ms-1"
       >*</span>
     </Label>
 

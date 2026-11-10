@@ -2,6 +2,7 @@ import "./bootstrap";
 import "../css/app.css";
 
 import { createApp, h } from "vue";
+import { ConfigProvider } from "reka-ui";
 import {
     plugin as formKitPlugin,
     defaultConfig as formKitDefaultConfig,
@@ -28,7 +29,9 @@ createInertiaApp({
             themePages
         ),
     setup({ el, App, props, plugin }) {
-        const VueApp = createApp({ render: () => h(App, props) })
+        const VueApp = createApp({
+            render: () => h(ConfigProvider, { dir: document.documentElement.dir || "ltr" }, () => h(App, props)),
+        })
             .use(plugin)
              
             .use(ZiggyVue)

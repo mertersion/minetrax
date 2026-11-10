@@ -55,7 +55,7 @@
             >
               <InertiaLink :href="route('linked-player.list')">
                 <svg
-                  class="w-5 h-5 mr-2"
+                  class="w-5 h-5 me-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -81,7 +81,7 @@
           <div class="flex">
             <div class="py-1">
               <svg
-                class="w-6 h-6 mr-4 fill-current"
+                class="w-6 h-6 me-4 fill-current"
                 :class="{
                   'text-primary': linkSlotsLeft > 0,
                   'text-orange-500': linkSlotsLeft <= 0,
@@ -189,7 +189,7 @@
         >
           <CardContent class="p-4">
             <div class="flex flex-col items-center">
-              <div class="flex justify-center pr-10">
+              <div class="flex justify-center pe-10">
                 <canvas :id="`skin_container_${player.uuid}`" />
                 <div class="flex flex-col space-y-2">
                   <div class="username">

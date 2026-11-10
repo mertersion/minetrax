@@ -283,7 +283,7 @@ function validateScoreExpression() {
                             <LoadingButton
                               type="button"
                               variant="outline"
-                              class="ml-2 h-9 mt-7"
+                              class="ms-2 h-9 mt-7"
                               :loading="isValidatingRating"
                               @click="validateRatingExpression"
                             >
@@ -426,7 +426,7 @@ function validateScoreExpression() {
                             <LoadingButton
                               type="button"
                               variant="outline"
-                              class="ml-2 h-9 mt-7"
+                              class="ms-2 h-9 mt-7"
                               :loading="isValidatingScore"
                               @click="validateScoreExpression"
                             >
@@ -472,7 +472,7 @@ function validateScoreExpression() {
                           class="w-4 h-4 mt-0.5 accent-primary border-input focus:ring-primary"
                           name="show_player_intel_to"
                         >
-                        <div class="ml-3">
+                        <div class="ms-3">
                           <span class="font-medium text-foreground">{{ __("Only Superadmin") }}</span>
                           <p class="text-xs text-muted-foreground mt-1">
                             {{ __("Only superadmin role will be able to view player intel data for anyone.") }}
@@ -493,7 +493,7 @@ function validateScoreExpression() {
                           class="w-4 h-4 mt-0.5 accent-primary border-input focus:ring-primary"
                           name="show_player_intel_to"
                         >
-                        <div class="ml-3">
+                        <div class="ms-3">
                           <span class="font-medium text-foreground">{{ __("Staff Role and above") }}</span>
                           <p class="text-xs text-muted-foreground mt-1">
                             {{ __("Any staff role & superadmin will be able to view player intel for any player.") }}
@@ -514,7 +514,7 @@ function validateScoreExpression() {
                           class="w-4 h-4 mt-0.5 accent-primary border-input focus:ring-primary"
                           name="show_player_intel_to"
                         >
-                        <div class="ml-3">
+                        <div class="ms-3">
                           <span class="font-medium text-foreground">{{ __("Linked Account and above") }}</span>
                           <p class="text-xs text-muted-foreground mt-1">
                             {{ __("User who linked player can view player intel for the linked players. Superadmin & Staff role can view all players.") }}
@@ -535,7 +535,7 @@ function validateScoreExpression() {
                           class="w-4 h-4 mt-0.5 accent-primary border-input focus:ring-primary"
                           name="show_player_intel_to"
                         >
-                        <div class="ml-3">
+                        <div class="ms-3">
                           <span class="font-medium text-foreground">{{ __("Any Authenticated User") }}</span>
                           <p class="text-xs text-muted-foreground mt-1">
                             {{ __("Any authenticated user can view player intel data for any player.") }}
@@ -556,7 +556,7 @@ function validateScoreExpression() {
                           class="w-4 h-4 mt-0.5 accent-primary border-input focus:ring-primary"
                           name="show_player_intel_to"
                         >
-                        <div class="ml-3">
+                        <div class="ms-3">
                           <span class="font-medium text-foreground">{{ __("Public") }}</span>
                           <p class="text-xs text-muted-foreground mt-1">
                             {{ __("Any user or guest visiting the website can view player intel for any player.") }}
@@ -575,7 +575,7 @@ function validateScoreExpression() {
               >
                 <svg
                   v-if="form.processing"
-                  class="animate-spin -ml-1 mr-2 h-4 w-4"
+                  class="animate-spin -ms-1 me-2 h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

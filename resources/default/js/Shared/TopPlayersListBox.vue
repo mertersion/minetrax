@@ -10,19 +10,19 @@
             <tr>
               <th
                 scope="col"
-                class="p-1 text-left text-xs font-bold uppercase tracking-wider"
+                class="p-1 text-start text-xs font-bold uppercase tracking-wider"
               >
                 {{ __("#") }}
               </th>
               <th
                 scope="col"
-                class="p-1 text-left text-xs font-bold uppercase tracking-wider"
+                class="p-1 text-start text-xs font-bold uppercase tracking-wider"
               >
                 {{ __("Flag") }}
               </th>
               <th
                 scope="col"
-                class="p-1 text-left text-xs font-bold uppercase tracking-wider"
+                class="p-1 text-start text-xs font-bold uppercase tracking-wider"
               >
                 {{ __("Name") }}
               </th>
@@ -34,7 +34,7 @@
               </th>
               <th
                 scope="col"
-                class="p-1 text-right text-xs font-bold uppercase tracking-wider hidden sm:table-cell"
+                class="p-1 text-end text-xs font-bold uppercase tracking-wider hidden sm:table-cell"
               >
                 {{ __("Last Seen") }}
               </th>
@@ -67,7 +67,7 @@
                       alt=""
                     >
                   </div>
-                  <div class="ml-4">
+                  <div class="ms-4">
                     <inertia-link
                       v-tippy
                       as="div"
@@ -101,7 +101,7 @@
                   class="text-foreground dark:text-foreground italic"
                 >{{ __("none") }}</span>
               </td>
-              <td class="p-1 text-xs text-foreground dark:text-foreground text-right hidden sm:table-cell">
+              <td class="p-1 text-xs text-foreground dark:text-foreground text-end hidden sm:table-cell">
                 <span
                   v-tippy
                   class="focus:outline-hidden"

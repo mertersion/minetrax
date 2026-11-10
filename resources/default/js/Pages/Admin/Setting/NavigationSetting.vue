@@ -242,7 +242,7 @@ function removeNavItem(idx, list) {
                                 />
 
                                 <Icon
-                                  class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                  class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                   name="close"
                                   @click="removeNavItem(index, leftNavList)"
                                 />
@@ -272,7 +272,7 @@ function removeNavItem(idx, list) {
                                         />
 
                                         <Icon
-                                          class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                          class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                           name="close"
                                           @click="removeNavItem(idx, element.children)"
                                         />
@@ -312,7 +312,7 @@ function removeNavItem(idx, list) {
                                 />
 
                                 <Icon
-                                  class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                  class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                   name="close"
                                   @click="removeNavItem(index, middleNavList)"
                                 />
@@ -342,7 +342,7 @@ function removeNavItem(idx, list) {
                                         />
 
                                         <Icon
-                                          class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                          class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                           name="close"
                                           @click="removeNavItem(idx, element.children)"
                                         />
@@ -382,7 +382,7 @@ function removeNavItem(idx, list) {
                                 />
 
                                 <Icon
-                                  class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                  class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                   name="close"
                                   @click="removeNavItem(index, rightNavList)"
                                 />
@@ -412,7 +412,7 @@ function removeNavItem(idx, list) {
                                         />
 
                                         <Icon
-                                          class="w-4 h-4 absolute right-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
+                                          class="w-4 h-4 absolute end-2 top-2 cursor-pointer text-muted-foreground hover:text-destructive"
                                           name="close"
                                           @click="removeNavItem(idx, element.children)"
                                         />
@@ -555,7 +555,7 @@ function removeNavItem(idx, list) {
               >
                 <svg
                   v-if="form.processing"
-                  class="animate-spin -ml-1 mr-2 h-4 w-4"
+                  class="animate-spin -ms-1 me-2 h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

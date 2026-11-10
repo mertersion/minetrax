@@ -46,7 +46,7 @@ onMounted(async () => {
         <h3 class="font-extrabold text-foreground flex mt-2 items-center">
           <Icon
             name="calculator"
-            class="w-6 mr-2"
+            class="w-6 me-2"
           />
           {{ __("Numbers") }}
         </h3>
@@ -67,29 +67,29 @@ onMounted(async () => {
               <tr>
                 <th
                   scope="col"
-                  class="text-left p-2"
+                  class="text-start p-2"
                 />
                 <th
                   scope="col"
-                  class="text-left p-2"
+                  class="text-start p-2"
                 >
                   {{ __("Last 24 hours") }}
                 </th>
                 <th
                   scope="col"
-                  class="text-left p-2"
+                  class="text-start p-2"
                 >
                   {{ __("Last 7 days") }}
                 </th>
                 <th
                   scope="col"
-                  class="text-left p-2"
+                  class="text-start p-2"
                 >
                   {{ __("Last 30 days") }}
                 </th>
                 <th
                   scope="col"
-                  class="text-left p-2"
+                  class="text-start p-2"
                 >
                   {{ __("Last 3 months") }}
                 </th>
@@ -100,7 +100,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="users"
-                    class="w-5 text-success mr-1"
+                    class="w-5 text-success me-1"
                   />
                   {{ __("Peak Online Players") }}
                 </td>
@@ -122,7 +122,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="finger-print"
-                    class="w-5 text-primary mr-1"
+                    class="w-5 text-primary me-1"
                   />
                   {{ __("Avg Player Session Length") }}
                 </td>
@@ -144,7 +144,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="moon-outline"
-                    class="w-5 text-foreground mr-1"
+                    class="w-5 text-foreground me-1"
                   />
                   {{ __("Avg Player AFK Time") }}
                 </td>
@@ -166,7 +166,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="joystick"
-                    class="w-5 text-pink-500 mr-1"
+                    class="w-5 text-pink-500 me-1"
                   />
                   {{ __("Lowest TPS") }}
                 </td>
@@ -188,7 +188,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="cpu"
-                    class="w-5 text-primary mr-1"
+                    class="w-5 text-primary me-1"
                   />
                   {{ __("Avg CPU Usage") }}
                 </td>
@@ -210,7 +210,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="ram"
-                    class="w-5 text-orange-500 mr-1"
+                    class="w-5 text-orange-500 me-1"
                   />
                   {{ __("Avg RAM Usage") }}
                 </td>
@@ -232,7 +232,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="grid"
-                    class="w-5 text-purple-500 mr-1"
+                    class="w-5 text-purple-500 me-1"
                   />
                   {{ __("Avg Chunks Loaded") }}
                 </td>
@@ -254,7 +254,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="server"
-                    class="w-5 text-primary mr-1"
+                    class="w-5 text-primary me-1"
                   />
                   {{ __("Min Free Disk") }}
                 </td>
@@ -276,7 +276,7 @@ onMounted(async () => {
                 <td class="p-2 flex">
                   <icon
                     name="toggle-off"
-                    class="w-5 text-destructive mr-1"
+                    class="w-5 text-destructive me-1"
                   />
                   {{ __("Total Restarts") }}
                 </td>

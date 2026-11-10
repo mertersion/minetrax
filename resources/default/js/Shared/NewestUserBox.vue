@@ -20,7 +20,7 @@
               class="text-card-foreground font-semibold text-sm"
               :style="[user.roles[0].color ? {color: user.roles[0].color} : null]"
             >{{ user.name }}</span>
-            <span class="text-muted-foreground text-sm ml-1">@{{ user.username }}</span>
+            <span class="text-muted-foreground text-sm ms-1">@{{ user.username }}</span>
           </div>
           <span
             v-tippy

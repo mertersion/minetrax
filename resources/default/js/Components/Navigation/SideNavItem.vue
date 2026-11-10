@@ -38,7 +38,7 @@ const hasActiveChild = computed(() => {
       :is="item.icon"
       v-if="item.icon"
       :class="[
-        'w-6 h-6 shrink-0 mr-2',
+        'w-6 h-6 shrink-0 me-2',
         item.active ? 'text-primary' : 'text-sidebar-foreground'
       ]"
     />
@@ -52,7 +52,7 @@ const hasActiveChild = computed(() => {
   >
     <DisclosureButton
       :class="[
-        'group text-left flex w-full items-center rounded-md py-2 px-3 text-sm',
+        'group text-start flex w-full items-center rounded-md py-2 px-3 text-sm',
         'hover:bg-accent hover:text-accent-foreground',
         open ? 'font-semibold text-primary' : 'text-sidebar-foreground font-medium'
       ]"
@@ -61,7 +61,7 @@ const hasActiveChild = computed(() => {
         :is="item.icon"
         v-if="item.icon"
         :class="[
-          'w-6 h-6 shrink-0 mr-2',
+          'w-6 h-6 shrink-0 me-2',
           open ? 'text-primary' : 'text-sidebar-foreground'
         ]"
       />
@@ -80,7 +80,7 @@ const hasActiveChild = computed(() => {
     </DisclosureButton>
     <DisclosurePanel
       v-if="!collapsed"
-      class="ml-4"
+      class="ms-4"
     >
       <SideNavItem
         v-for="child in item.children"

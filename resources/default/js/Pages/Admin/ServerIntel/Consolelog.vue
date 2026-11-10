@@ -48,7 +48,7 @@ const headerRow = [
         key: "id",
         label: __("ID"),
         sortable: true,
-        class: "text-left",
+        class: "text-start",
     },
     {
         key: "data",

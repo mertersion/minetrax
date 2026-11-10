@@ -11,7 +11,7 @@
 
     <label
       :for="id"
-      class="font-medium text-sm flex flex-col text-foreground dark:text-foreground ml-3 leading-tight cursor-pointer"
+      class="font-medium text-sm flex flex-col text-foreground dark:text-foreground ms-3 leading-tight cursor-pointer"
     >
       <span v-if="label">{{ label }}</span>
       <span

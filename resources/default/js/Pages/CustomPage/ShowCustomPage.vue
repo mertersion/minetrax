@@ -1,6 +1,6 @@
 <template>
   <AppLayout>
-    <AppHead :title="customPage.title" />
+    <AppHead :title="__(customPage.title)" />
 
     <AppBreadcrumb
       v-if="!customPage.is_html_page"
@@ -43,7 +43,7 @@
           <Card class="transition-shadow duration-300 hover:shadow-lg">
             <CardHeader>
               <CardTitle class="text-2xl md:text-4xl">
-                {{ customPage.title }}
+                {{ __(customPage.title) }}
               </CardTitle>
             </CardHeader>
             <CardContent class="p-6 sm:p-8 pt-0">
@@ -99,7 +99,7 @@ const breadcrumbItems = [
         current: false
     },
     {
-        text: truncate(props.customPage.title),
+        text: truncate(window._translations?.[props.customPage.title] || props.customPage.title),
         current: true
     }
 ];

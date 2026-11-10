@@ -46,12 +46,12 @@ onMounted(async () => {
                 return `
                     <div class="flex flex-col">
                         <div class="flex flex-row items-center">
-                            <img :alt="name" src="${image}" class="w-8 h-8 mr-2" />
+                            <img :alt="name" src="${image}" class="w-8 h-8 me-2" />
                             <span class="font-bold">${name}</span>
                         </div>
                         <div class="flex flex-row justify-center items-center">
                             <span class="font-bold">${value || 0}</span>
-                            <span class="ml-1">players</span>
+                            <span class="ms-1">players</span>
                         </div>
                     </div>`;
             },

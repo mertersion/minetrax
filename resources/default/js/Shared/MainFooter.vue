@@ -44,7 +44,7 @@ if(customFooterData?.style =="variant_1") {
       id="variant_1"
       class="container flex flex-col flex-wrap px-5 py-20 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
     >
-      <div class="shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+      <div class="shrink-0 w-64 mx-auto text-center md:mx-0 md:text-start">
         <InertiaLink
           class="flex md:justify-start justify-center"
           :href="route('home')"
@@ -59,7 +59,7 @@ if(customFooterData?.style =="variant_1") {
           {{ customFooterData.site_moto }}
         </p>
         <div class="mt-4">
-          <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+          <span class="inline-flex justify-center mt-2 sm:ms-auto sm:mt-0 sm:justify-start">
             <a
               v-if="facebookUrl"
               target="_blank"
@@ -75,7 +75,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="twitterUrl"
               target="_blank"
               :href="twitterUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="twitter"
@@ -86,7 +86,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="linkedinUrl"
               target="_blank"
               :href="linkedinUrl"
-              class="ml-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="linkedin"
@@ -98,7 +98,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="youtubeUrl"
               target="_blank"
               :href="youtubeUrl"
-              class="ml-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="youtube"
@@ -109,7 +109,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="discordUrl"
               target="_blank"
               :href="discordUrl"
-              class="ml-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 -mt-0.5 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="discord"
@@ -120,7 +120,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="tiktokUrl"
               target="_blank"
               :href="tiktokUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="tiktok"
@@ -131,7 +131,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="twitchUrl"
               target="_blank"
               :href="twitchUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="twitch"
@@ -143,7 +143,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="threadsUrl"
               target="_blank"
               :href="threadsUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="threads"
@@ -154,7 +154,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="instagramUrl"
               target="_blank"
               :href="instagramUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="instagram"
@@ -165,7 +165,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="whatsappUrl"
               target="_blank"
               :href="whatsappUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="whatsapp"
@@ -176,7 +176,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="telegramUrl"
               target="_blank"
               :href="telegramUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="telegram"
@@ -187,7 +187,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="redditUrl"
               target="_blank"
               :href="redditUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="reddit"
@@ -198,7 +198,7 @@ if(customFooterData?.style =="variant_1") {
               v-if="githubUrl"
               target="_blank"
               :href="githubUrl"
-              class="ml-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
+              class="ms-3 text-foreground cursor-pointer hover:text-foreground dark:hover:text-foreground"
             >
               <Icon
                 name="github"
@@ -208,7 +208,7 @@ if(customFooterData?.style =="variant_1") {
           </span>
         </div>
       </div>
-      <div class="flex flex-col flex-wrap grow mt-10 -mb-10 text-center md:flex-row md:pl-20 md:mt-0 md:text-left">
+      <div class="flex flex-col flex-wrap grow mt-10 -mb-10 text-center md:flex-row md:ps-20 md:mt-0 md:text-start">
         <div
           v-for="column,cIndex in customFooterColumns"
           :key="cIndex"

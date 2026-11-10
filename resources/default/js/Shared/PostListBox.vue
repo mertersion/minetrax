@@ -27,7 +27,7 @@
             >
               <button
                 type="button"
-                class="m-1 absolute top-0 left-0 bg-black/75 rounded-full cursor-pointer hover:bg-black text-white"
+                class="m-1 absolute top-0 start-0 bg-black/75 rounded-full cursor-pointer hover:bg-black text-white"
                 @click="removeMedia(index)"
               >
                 <icon

@@ -251,7 +251,7 @@ function savePluginSetting() {
                             <h3 class="text-foreground text-sm font-semibold">
                               {{ __("Available Placeholders") }}
                             </h3>
-                            <ol class="text-sm text-right text-muted-foreground">
+                            <ol class="text-sm text-end text-muted-foreground">
                               <li>
                                 <code class="text-sm bg-muted p-1 rounded-md">{PLAYER_USERNAME}</code> - {{ __("Username of the player which is linked.") }}
                               </li>
@@ -387,7 +387,7 @@ function savePluginSetting() {
                             <h3 class="text-foreground text-sm font-semibold">
                               {{ __("Available Placeholders") }}
                             </h3>
-                            <ol class="text-sm text-right text-muted-foreground">
+                            <ol class="text-sm text-end text-muted-foreground">
                               <li>
                                 <code class="text-sm bg-muted p-1 rounded-md">{PLAYER_USERNAME}</code> - {{ __("Username of the player which is unlinked.") }}
                               </li>
@@ -593,7 +593,7 @@ function savePluginSetting() {
                             <h3 class="text-foreground text-sm font-semibold">
                               {{ __("Available Placeholders") }}
                             </h3>
-                            <ol class="text-sm text-right text-muted-foreground">
+                            <ol class="text-sm text-end text-muted-foreground">
                               <li>
                                 <code class="text-sm bg-muted p-1 rounded-md">{PLAYER_USERNAME}</code> - {{ __("Username of the player whose password is being reset.") }}
                               </li>
@@ -719,7 +719,7 @@ function savePluginSetting() {
               >
                 <svg
                   v-if="form.processing"
-                  class="animate-spin -ml-1 mr-2 h-4 w-4"
+                  class="animate-spin -ms-1 me-2 h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

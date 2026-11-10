@@ -533,3 +533,9 @@
 }
 
 /* ===================== END OF TWEAKCN ===================== */
+
+/* Bilingual admin content: mark blocks with class "lang-en" or "lang-ar" */
+html:not([lang="ar"]) .lang-ar,
+html[lang="ar"] .lang-en {
+    display: none !important;
+}

@@ -1744,5 +1744,6 @@
     "[Notification] You are Banned by :user": "[إشعار] لقد حظرك :user",
     "[Notification] You are Muted by :user": "[إشعار] لقد كتمك :user",
     "[Notification] Your application request has a new message.": "[إشعار] هناك رسالة جديدة على طلبك.",
-    "[Notification] Your Application request status has changed.": "[إشعار] تغيرت حالة طلبك."
+    "[Notification] Your Application request status has changed.": "[إشعار] تغيرت حالة طلبك.",
+    "Features": "الميزات"
 }

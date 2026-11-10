@@ -143,7 +143,7 @@ function scrollToBottom() {
         variant="destructive"
       >
         <template #icon>
-          <ExclamationTriangleIcon class="h-6 w-6 mr-4 text-destructive" />
+          <ExclamationTriangleIcon class="h-6 w-6 me-4 text-destructive" />
         </template>
         {{ __("This feature is not enabled!") }}
         <template #body>
@@ -155,7 +155,7 @@ function scrollToBottom() {
       <div
         id="container"
         ref="container"
-        class="pr-2 overflow-y-auto grow"
+        class="pe-2 overflow-y-auto grow"
         :class="{'opacity-25': !featureEnabled}"
       >
         <template v-if="showWelcome">
@@ -166,7 +166,7 @@ function scrollToBottom() {
           >
             <Icon
               name="askdb-logo"
-              class="w-16 h-16 mr-2 text-foreground"
+              class="w-16 h-16 me-2 text-foreground"
             />
             <h1 class="text-4xl font-bold text-foreground">
               {{ __("Ask DB") }}
@@ -187,7 +187,7 @@ function scrollToBottom() {
                 v-for="example in examples"
                 :key="example"
                 :disabled="!featureEnabled"
-                class="block w-full p-6 text-sm font-normal text-left text-foreground bg-card border border-border rounded-lg shadow-sm cursor-pointer hover:bg-accent hover:border-primary/50 transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+                class="block w-full p-6 text-sm font-normal text-start text-foreground bg-card border border-border rounded-lg shadow-sm cursor-pointer hover:bg-accent hover:border-primary/50 transition-colors disabled:cursor-not-allowed disabled:opacity-50"
                 @click="askWithExample(example)"
               >
                 {{ example }}
@@ -222,7 +222,7 @@ function scrollToBottom() {
               <div class="shrink-0">
                 <Icon
                   name="askdb-logo"
-                  class="w-6 h-6 mr-3 text-primary"
+                  class="w-6 h-6 me-3 text-primary"
                 />
               </div>
               <div class="flex-1 min-w-0">
@@ -260,7 +260,7 @@ function scrollToBottom() {
               v-model="form.prompt"
               name="prompt"
               :placeholder="__('Enter your query in natural language..')"
-              class="block w-full h-24 p-4 pr-14 text-foreground border border-border rounded-lg shadow-sm resize-none bg-card placeholder:text-muted-foreground focus:outline-hidden focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              class="block w-full h-24 p-4 pe-14 text-foreground border border-border rounded-lg shadow-sm resize-none bg-card placeholder:text-muted-foreground focus:outline-hidden focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
               :disabled="form.loading || !featureEnabled"
               rows="2"
               @keydown="handleKeydown"
@@ -269,7 +269,7 @@ function scrollToBottom() {
             <button
               type="submit"
               :disabled="form.loading || !featureEnabled"
-              class="absolute p-2.5 transition-colors duration-200 ease-in-out rounded-lg bottom-3 right-3 bg-primary text-primary-foreground cursor-pointer hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="absolute p-2.5 transition-colors duration-200 ease-in-out rounded-lg bottom-3 end-3 bg-primary text-primary-foreground cursor-pointer hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <svg
                 v-if="form.loading"
@@ -313,7 +313,7 @@ function scrollToBottom() {
           <div class="mt-2">
             <p
               v-if="form.error"
-              class="text-sm text-right text-destructive"
+              class="text-sm text-end text-destructive"
             >
               {{ form.error }}
             </p>

@@ -85,7 +85,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 
@@ -245,7 +245,7 @@ function getServerWebQueryStatus(serverId) {
                   alt="Country Flag"
                 >
               </div>
-              <div class="ml-4">
+              <div class="ms-4">
                 <div
                   class="text-sm font-medium text-foreground dark:text-foreground"
                 >
@@ -341,7 +341,7 @@ function getServerWebQueryStatus(serverId) {
           </DtRowItem>
 
           <td
-            class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+            class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
           >
             <div v-if="item?.settings?.is_deleting">
               <span

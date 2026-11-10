@@ -83,7 +83,7 @@ const options = ref({
       <h3 class="font-extrabold text-foreground flex items-center">
         <Icon
           name="server"
-          class="w-6 mr-2"
+          class="w-6 me-2"
         />
         {{ __("Server Performance") }}
       </h3>

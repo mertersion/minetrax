@@ -66,7 +66,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 </script>
@@ -125,7 +125,7 @@ const headerRow = [
             {{ item.id }}
           </td>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             {{ item.uuid }}
           </DtRowItem>
 
@@ -142,11 +142,11 @@ const headerRow = [
             </div>
           </td>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             {{ item.connection +'/'+ item.queue }}
           </DtRowItem>
 
-          <DtRowItem class="text-left">
+          <DtRowItem class="text-start">
             <span
               class="truncate"
               :title="item.exception"
@@ -165,7 +165,7 @@ const headerRow = [
           </DtRowItem>
 
           <td
-            class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+            class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
           >
             <ButtonGroup>
               <Button

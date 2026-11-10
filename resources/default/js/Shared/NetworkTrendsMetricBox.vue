@@ -40,25 +40,25 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                 <tr>
                   <th
                     scope="col"
-                    class="p-4 text-xs font-medium tracking-wider text-left text-muted-foreground uppercase whitespace-nowrap"
+                    class="p-4 text-xs font-medium tracking-wider text-start text-muted-foreground uppercase whitespace-nowrap"
                   >
                     {{ __("Metric") }}
                   </th>
                   <th
                     scope="col"
-                    class="p-4 text-xs font-medium tracking-wider text-left text-muted-foreground uppercase whitespace-nowrap"
+                    class="p-4 text-xs font-medium tracking-wider text-start text-muted-foreground uppercase whitespace-nowrap"
                   >
                     {{ __("Last Month") }}
                   </th>
                   <th
                     scope="col"
-                    class="p-4 text-xs font-medium tracking-wider text-left text-muted-foreground uppercase whitespace-nowrap"
+                    class="p-4 text-xs font-medium tracking-wider text-start text-muted-foreground uppercase whitespace-nowrap"
                   >
                     {{ __("This Month") }}
                   </th>
                   <th
                     scope="col"
-                    class="p-4 text-xs font-medium tracking-wider text-left text-muted-foreground uppercase whitespace-nowrap"
+                    class="p-4 text-xs font-medium tracking-wider text-start text-muted-foreground uppercase whitespace-nowrap"
                   >
                     {{ __("Trend") }}
                   </th>
@@ -71,7 +71,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('All players including old and new who is seen on the given time interval')"
-                      class="mx-5 ml-3 w-32 font-medium text-card-foreground sm:flex-none"
+                      class="mx-5 ms-3 w-32 font-medium text-card-foreground sm:flex-none"
                     >{{ __("Total Players") }}</span>
                   </td>
                   <td class="p-4 text-sm font-semibold text-card-foreground whitespace-nowrap">
@@ -97,7 +97,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('New players who is seen on the given time interval')"
-                      class="mx-5 ml-3 w-32 font-medium text-card-foreground sm:flex-none"
+                      class="mx-5 ms-3 w-32 font-medium text-card-foreground sm:flex-none"
                     >{{
                       __("New Players")
                     }}</span>
@@ -125,7 +125,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('Total sessions of players. One session is counted when player join server and then leave. A player can have multiple sessions.')"
-                      class="flex-none mx-5 ml-3 w-32 font-medium text-card-foreground"
+                      class="flex-none mx-5 ms-3 w-32 font-medium text-card-foreground"
                     >{{ __("Total Sessions") }}</span>
                   </td>
                   <td class="p-4 text-sm font-semibold text-card-foreground whitespace-nowrap">
@@ -151,7 +151,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('Average playtime player played during a session.')"
-                      class="flex-none mx-5 ml-3 w-32 font-medium text-card-foreground"
+                      class="flex-none mx-5 ms-3 w-32 font-medium text-card-foreground"
                     >{{
                       __("Avg Session Time")
                     }}</span>
@@ -179,7 +179,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('Average afktime player spent during a session.')"
-                      class="flex-none mx-5 ml-3 w-32 font-medium text-card-foreground"
+                      class="flex-none mx-5 ms-3 w-32 font-medium text-card-foreground"
                     >{{
                       __("Avg AFK Time")
                     }}</span>
@@ -207,7 +207,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('Average ping players getting on your servers.')"
-                      class="flex-none mx-5 ml-3 w-32 font-medium text-card-foreground"
+                      class="flex-none mx-5 ms-3 w-32 font-medium text-card-foreground"
                     >{{
                       __("Avg Player Ping")
                     }}</span>
@@ -235,7 +235,7 @@ const { data, isFinished, isLoading, error } = useAxios(route("admin.graph.netwo
                     <span
                       v-tippy="{ trigger:'click'}"
                       :title="__('Peek Online player reached on one server.')"
-                      class="flex-none mx-5 ml-3 w-32 font-medium text-card-foreground"
+                      class="flex-none mx-5 ms-3 w-32 font-medium text-card-foreground"
                     >Peek Online Players</span>
                   </td>
                   <td class="p-4 text-sm font-semibold text-card-foreground whitespace-nowrap">

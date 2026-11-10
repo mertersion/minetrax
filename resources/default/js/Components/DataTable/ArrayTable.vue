@@ -147,7 +147,7 @@ const sortedDir = computed(() => {
                       v-for="th in header"
                       :key="th.key"
                       scope="col"
-                      class="px-4 py-3 text-xs font-semibold text-left text-card-foreground/70"
+                      class="px-4 py-3 text-xs font-semibold text-start text-card-foreground/70"
                       :class="[th.class ? th.class : '']"
                     >
                       <div class="inline-flex items-center">
@@ -172,7 +172,7 @@ const sortedDir = computed(() => {
                                 : 'sort-down'
                               : 'sort-updown'
                             "
-                            class="inline-block w-3 h-3 ml-1 text-card-foreground/70"
+                            class="inline-block w-3 h-3 ms-1 text-card-foreground/70"
                             :class="[
                               sortedField ===
                                 th.key

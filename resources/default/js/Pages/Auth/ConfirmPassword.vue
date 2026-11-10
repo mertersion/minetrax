@@ -38,7 +38,7 @@
         <div class="flex justify-end mt-4">
           <loading-button
             :loading="form.processing"
-            class="ml-4"
+            class="ms-4"
           >
             {{ __("Confirm") }}
           </loading-button>

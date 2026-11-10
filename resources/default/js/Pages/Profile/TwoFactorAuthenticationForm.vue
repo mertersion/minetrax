@@ -215,7 +215,7 @@ const disableTwoFactorAuthentication = () => {
           <JetButton
             v-if="confirming"
             type="button"
-            class="mr-3"
+            class="me-3"
             :class="{'opacity-25': enabling }"
             :disabled="enabling"
           >
@@ -226,7 +226,7 @@ const disableTwoFactorAuthentication = () => {
         <JetConfirmsPassword @confirmed="regenerateRecoveryCodes">
           <JetSecondaryButton
             v-if="recoveryCodes.length > 0 && !confirming"
-            class="mr-3"
+            class="me-3"
           >
             {{ __("Regenerate Recovery Codes") }}
           </JetSecondaryButton>
@@ -235,7 +235,7 @@ const disableTwoFactorAuthentication = () => {
         <JetConfirmsPassword @confirmed="showRecoveryCodes">
           <JetSecondaryButton
             v-if="recoveryCodes.length === 0 && !confirming"
-            class="mr-3"
+            class="me-3"
           >
             {{ __("Show Recovery Codes") }}
           </JetSecondaryButton>

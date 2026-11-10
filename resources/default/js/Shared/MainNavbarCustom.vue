@@ -85,8 +85,8 @@ const logout = () => {
         </NavigationMenuList>
 
         <!-- Mobile Menu -->
-        <div class="flex items-center -mr-2 space-x-2 md:hidden">
-          <color-theme-toggle class="flex items-center justify-center space-x-8 md:ml-8 md:hidden" />
+        <div class="flex items-center -me-2 space-x-2 md:hidden">
+          <color-theme-toggle class="flex items-center justify-center space-x-8 md:ms-8 md:hidden" />
 
           <Sheet>
             <SheetTrigger>
@@ -146,7 +146,7 @@ const logout = () => {
                         $page.props.jetstream
                           .managesProfilePhotos
                       "
-                      class="shrink-0 mr-3"
+                      class="shrink-0 me-3"
                     >
                       <img
                         class="object-cover w-10 h-10 rounded-full"

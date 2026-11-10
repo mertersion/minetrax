@@ -196,7 +196,7 @@ const pollServerForNewMessages = () => {
 
       <div
         v-if="!isLoading && messages && messages.length > 0"
-        class="flex flex-col mt-3 mr-4 space-y-2"
+        class="flex flex-col mt-3 me-4 space-y-2"
       >
         <div
           v-for="comment in messages"
@@ -217,11 +217,11 @@ const pollServerForNewMessages = () => {
                   text-class="font-sm"
                 />
               </InertiaLink>
-              <span class="mr-1">&nbsp;{{ __("changed application status to") }}&nbsp;</span>
+              <span class="me-1">&nbsp;{{ __("changed application status to") }}&nbsp;</span>
               <CommonStatusBadge :status="comment.comment" />
               <span
                 v-tippy
-                class="inline ml-1 text-xs text-foreground dark:text-foreground focus:outline-hidden"
+                class="inline ms-1 text-xs text-foreground dark:text-foreground focus:outline-hidden"
                 :title="formatToDayDateString(comment.created_at)"
               >
                 {{ formatTimeAgoToNow(comment.created_at) }}
@@ -240,7 +240,7 @@ const pollServerForNewMessages = () => {
             <div
               v-if="comment.type.value === 'recruitment_staff_whisper'"
               v-tippy
-              class="flex mt-3.5 ml-1"
+              class="flex mt-3.5 ms-1"
               :class="{
                 'order-3': comment.type.value === 'recruitment_applicant_message',
               }"
@@ -251,7 +251,7 @@ const pollServerForNewMessages = () => {
             <div
               class="items-start w-full mx-2 space-y-2 text-sm"
               :class="{
-                'order-2 text-right': comment.type.value === 'recruitment_applicant_message',
+                'order-2 text-end': comment.type.value === 'recruitment_applicant_message',
               }"
             >
               <div
@@ -264,7 +264,7 @@ const pollServerForNewMessages = () => {
               >
                 <span
                   v-if="comment.is_new"
-                  class="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full animate-pulse"
+                  class="absolute -top-1 -end-1 w-3 h-3 bg-destructive rounded-full animate-pulse"
                 />
                 <InertiaLink
                   as="a"
@@ -278,7 +278,7 @@ const pollServerForNewMessages = () => {
                   >
                     <span
                       v-tippy
-                      class="inline ml-1 text-xs text-foreground dark:text-foreground focus:outline-hidden"
+                      class="inline ms-1 text-xs text-foreground dark:text-foreground focus:outline-hidden"
                       :title="formatToDayDateString(comment.created_at)"
                     >
                       {{ formatTimeAgoToNow(comment.created_at) }}
@@ -336,7 +336,7 @@ const pollServerForNewMessages = () => {
           v-tippy
           :disabled="!submission.i_can_send_message || isSendingMessage"
           :title="__('Send whisper to other staff members. This message will be private and only visible to staff members.')"
-          class="px-4 py-2 mr-2 font-bold text-yellow-500 bg-transparent rounded hover:text-yellow-400 dark:text-white disabled:cursor-not-allowed disabled:opacity-25"
+          class="px-4 py-2 me-2 font-bold text-yellow-500 bg-transparent rounded hover:text-yellow-400 dark:text-white disabled:cursor-not-allowed disabled:opacity-25"
           :loading="isSendingMessage"
           @click="sendMessage('recruitment_staff_whisper')"
         >

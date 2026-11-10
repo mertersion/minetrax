@@ -8,7 +8,7 @@
         ref="searchInput"
         v-model="searchString"
         aria-label="search"
-        class="border bg-background h-10 px-5 pr-10 w-48 rounded-full text-sm focus:outline-hidden focus:ring-0 transition-all duration-300 ease-in-out"
+        class="border bg-background h-10 px-5 pe-10 w-48 rounded-full text-sm focus:outline-hidden focus:ring-0 transition-all duration-300 ease-in-out"
         :class="{'w-80': showResults || isFocused}"
         type="search"
         name="search"
@@ -22,7 +22,7 @@
       >
       <button
         type="submit"
-        class="absolute right-0 top-0 mt-3 mr-4"
+        class="absolute end-0 top-0 mt-3 me-4"
       >
         <MagnifyingGlassIcon
           class="text-foreground h-4 w-4 stroke-2"
@@ -59,7 +59,7 @@
           >
             <div class="flex">
               <img
-                class="mr-3 w-10 h-10 rounded-full"
+                class="me-3 w-10 h-10 rounded-full"
                 :src="user.profile_photo_url"
                 alt="Image"
               >
@@ -111,7 +111,7 @@
           >
             <div class="flex items-center">
               <img
-                class="mr-3 w-8 h-8"
+                class="me-3 w-8 h-8"
                 :src="player.avatar_url"
                 alt="Avatar"
               >

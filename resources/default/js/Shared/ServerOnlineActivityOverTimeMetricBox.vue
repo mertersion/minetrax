@@ -187,7 +187,7 @@ const datePickerShortcuts = [
     <CardContent class="p-4 space-y-6">
       <div class="flex justify-between items-center">
         <h3 class="font-extrabold text-foreground flex items-center">
-          <ArrowTrendingUpIcon class="w-6 mr-2" />
+          <ArrowTrendingUpIcon class="w-6 me-2" />
           {{ __("Server Online Activity") }}
         </h3>
 

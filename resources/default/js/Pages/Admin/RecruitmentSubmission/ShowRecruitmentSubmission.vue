@@ -92,7 +92,7 @@ const breadcrumbItems = [
       <!-- Header -->
       <div class="flex justify-between items-center">
         <h1 class="font-bold text-xl text-foreground dark:text-foreground flex items-center">
-          <span class="mr-3">
+          <span class="me-3">
             {{
               __(':user application for :recruitmenttitle #:index', {
                 user: submission.user.name,
@@ -165,7 +165,7 @@ const breadcrumbItems = [
                       :href="route('user.public.get', submission.user.username)"
                       class="flex items-center"
                     >
-                      <div class="shrink-0 h-10 w-10 mr-2">
+                      <div class="shrink-0 h-10 w-10 me-2">
                         <img
                           class="h-10 w-10 rounded-full"
                           :src="submission.user.profile_photo_url"
@@ -253,7 +253,7 @@ const breadcrumbItems = [
               >
                 <div class="flex items-center justify-between w-full">
                   <span>{{ __("Reason") }}</span>
-                  <span class="w-1/2 whitespace-pre-line text-right">{{ submission.last_act_reason }}</span>
+                  <span class="w-1/2 whitespace-pre-line text-end">{{ submission.last_act_reason }}</span>
                 </div>
               </li>
 
@@ -272,7 +272,7 @@ const breadcrumbItems = [
                       :href="route('user.public.get', submission.last_actor.username)"
                       class="flex items-center"
                     >
-                      <div class="shrink-0 h-10 w-10 mr-2">
+                      <div class="shrink-0 h-10 w-10 me-2">
                         <img
                           class="h-10 w-10 rounded-full"
                           :src="submission.last_actor.profile_photo_url"
@@ -415,7 +415,7 @@ const breadcrumbItems = [
         <DialogFooter>
           <Button
             variant="outline"
-            class="mr-2"
+            class="me-2"
             @click="showingRejectForm = false"
           >
             {{ __("Cancel") }}

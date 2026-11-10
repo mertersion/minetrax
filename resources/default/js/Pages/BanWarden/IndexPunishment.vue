@@ -27,13 +27,13 @@ const headerRow = [
         key:"id",
         label: __("#"),
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
     },
     {
         key:"country_id",
         label:"",
         sortable: true,
-        class:"text-left w-12",
+        class:"text-start w-12",
         filterable: {
             key:"country.name",
             type:"multiselect",
@@ -132,7 +132,7 @@ const headerRow = [
         key:"actions",
         label:"",
         sortable: false,
-        class:"w-1 text-right",
+        class:"w-1 text-end",
     },
 ];
 
@@ -162,7 +162,7 @@ const breadcrumbItems = [
               <div class="flex items-center justify-center shrink-0 h-12 w-12 rounded-xl bg-sky-100 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400">
                 <ScaleIcon class="w-6 h-6 stroke-2" />
               </div>
-              <div class="flex flex-col grow ml-4">
+              <div class="flex flex-col grow ms-4">
                 <div class="text-sm text-muted-foreground">
                   {{ __("Punishments") }}
                 </div>
@@ -180,7 +180,7 @@ const breadcrumbItems = [
               <div class="flex items-center justify-center shrink-0 h-12 w-12 rounded-xl bg-destructive/10 text-destructive">
                 <NoSymbolIcon class="w-6 h-6 stroke-2" />
               </div>
-              <div class="flex flex-col grow ml-4">
+              <div class="flex flex-col grow ms-4">
                 <div class="text-sm text-muted-foreground">
                   {{ __("Bans") }}
                 </div>
@@ -197,7 +197,7 @@ const breadcrumbItems = [
               <div class="flex items-center justify-center shrink-0 h-12 w-12 rounded-xl bg-muted dark:bg-muted text-muted-foreground">
                 <SpeakerXMarkIcon class="w-6 h-6 stroke-2" />
               </div>
-              <div class="flex flex-col grow ml-4">
+              <div class="flex flex-col grow ms-4">
                 <div class="text-sm text-muted-foreground">
                   {{ __("Mutes") }}
                 </div>
@@ -214,7 +214,7 @@ const breadcrumbItems = [
               <div class="flex items-center justify-center shrink-0 h-12 w-12 rounded-xl bg-yellow-100 dark:bg-yellow-500/10 text-yellow-600 dark:text-yellow-400">
                 <ExclamationTriangleIcon class="w-6 h-6 stroke-2" />
               </div>
-              <div class="flex flex-col grow ml-4">
+              <div class="flex flex-col grow ms-4">
                 <div class="text-sm text-muted-foreground">
                   {{ __("Warns") }}
                 </div>
@@ -231,7 +231,7 @@ const breadcrumbItems = [
               <div class="flex items-center justify-center shrink-0 h-12 w-12 rounded-xl bg-orange-100 dark:bg-orange-500/10 text-orange-600 dark:text-orange-400">
                 <ArrowRightOnRectangleIcon class="w-6 h-6 stroke-2" />
               </div>
-              <div class="flex flex-col grow ml-4">
+              <div class="flex flex-col grow ms-4">
                 <div class="text-sm text-muted-foreground">
                   {{ __("Kicks") }}
                 </div>
@@ -289,7 +289,7 @@ const breadcrumbItems = [
                       alt=""
                     >
                   </div>
-                  <div class="ml-2">
+                  <div class="ms-2">
                     <Link
                       v-tippy
                       as="a"
@@ -318,7 +318,7 @@ const breadcrumbItems = [
                       alt=""
                     >
                   </div>
-                  <div class="ml-2">
+                  <div class="ms-2">
                     <div
                       v-tippy
                       class="text-sm font-medium text-foreground dark:text-foreground"
@@ -371,7 +371,7 @@ const breadcrumbItems = [
                       alt=""
                     >
                   </div>
-                  <div class="ml-2">
+                  <div class="ms-2">
                     <Link
                       v-tippy
                       as="a"
@@ -452,7 +452,7 @@ const breadcrumbItems = [
               <CommonStatusBadge :status="item.is_active ?'active':'inactive'" />
             </DtRowItem>
 
-            <td class="px-4 py-3 space-x-2 text-sm font-medium text-right whitespace-nowrap">
+            <td class="px-4 py-3 space-x-2 text-sm font-medium text-end whitespace-nowrap">
               <InertiaLink
                 v-tippy
                 :title="__('View details')"

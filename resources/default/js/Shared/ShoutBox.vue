@@ -18,10 +18,10 @@
           <div class="chat-message">
             <div class="flex">
               <div class="order-2 items-start mx-2 space-y-2 max-w-xs text-sm">
-                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-tl-lg bg-muted">
+                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-ss-lg bg-muted">
                   <div class="mb-2">
                     <Skeleton class="inline-block w-16 h-4" />
-                    <Skeleton class="inline-block ml-1 w-12 h-3" />
+                    <Skeleton class="inline-block ms-1 w-12 h-3" />
                   </div>
                   <div class="space-y-1">
                     <Skeleton class="w-32 h-4" />
@@ -37,9 +37,9 @@
           <div class="chat-message">
             <div class="flex justify-end">
               <div class="order-1 items-start mx-2 space-y-2 max-w-xs text-sm">
-                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-tr-lg bg-primary">
-                  <div class="mb-2 text-right">
-                    <Skeleton class="inline-block mr-1 w-12 h-3" />
+                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-se-lg bg-primary">
+                  <div class="mb-2 text-end">
+                    <Skeleton class="inline-block me-1 w-12 h-3" />
                     <Skeleton class="inline-block w-16 h-4" />
                   </div>
                   <div class="space-y-1">
@@ -56,10 +56,10 @@
           <div class="chat-message">
             <div class="flex">
               <div class="order-2 items-start mx-2 space-y-2 max-w-xs text-sm">
-                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-tl-lg bg-muted">
+                <div class="flex flex-col px-4 py-2 rounded-2xl rounded-ss-lg bg-muted">
                   <div class="mb-2">
                     <Skeleton class="inline-block w-20 h-4" />
-                    <Skeleton class="inline-block ml-1 w-10 h-3" />
+                    <Skeleton class="inline-block ms-1 w-10 h-3" />
                   </div>
                   <div class="space-y-1">
                     <Skeleton class="w-36 h-4" />
@@ -83,7 +83,7 @@
           >
             <div class="order-2 items-start mx-2 space-y-2 max-w-xs text-sm">
               <div
-                class="flex flex-col px-4 py-2 rounded-2xl rounded-tl-lg text-card-foreground bg-muted"
+                class="flex flex-col px-4 py-2 rounded-2xl rounded-ss-lg text-card-foreground bg-muted"
               >
                 <div>
                   <inertia-link
@@ -96,7 +96,7 @@
                   </inertia-link>
                   <span
                     v-tippy
-                    class="ml-1 text-xs text-muted-foreground focus:outline-hidden"
+                    class="ms-1 text-xs text-muted-foreground focus:outline-hidden"
                     :title="formatToDayDateString(shout.created_at)"
                   >
                     {{ formatTimeAgoToNow(shout.created_at, false) }}
@@ -150,12 +150,12 @@
             </inertia-link>
             <div class="order-1 items-start mx-2 space-y-2 max-w-xs text-sm">
               <div
-                class="flex flex-col px-4 py-2 rounded-2xl rounded-tr-lg text-primary-foreground bg-primary"
+                class="flex flex-col px-4 py-2 rounded-2xl rounded-se-lg text-primary-foreground bg-primary"
               >
-                <div class="text-right">
+                <div class="text-end">
                   <span
                     v-tippy
-                    class="mr-1 text-xs text-primary-foreground/70 focus:outline-hidden"
+                    class="me-1 text-xs text-primary-foreground/70 focus:outline-hidden"
                     :title="formatToDayDateString(shout.created_at)"
                   >
                     {{ formatTimeAgoToNow(shout.created_at, false) }}

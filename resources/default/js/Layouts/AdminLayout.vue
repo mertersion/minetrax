@@ -22,7 +22,7 @@ function toggleMenuCollapse() {
 
     <main
       :class="[
-        isMenuCollapsed ? 'ml-16' : 'ml-64'
+        isMenuCollapsed ? 'ms-16' : 'ms-64'
       ]"
     >
       <slot />

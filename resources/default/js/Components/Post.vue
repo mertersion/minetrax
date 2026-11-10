@@ -9,7 +9,7 @@
             :src="post.user.profile_photo_url"
             alt="profile photo"
           >
-          <div class="ml-3 mt-0.5">
+          <div class="ms-3 mt-0.5">
             <inertia-link
               class="cursor-pointer hover:underline text-card-foreground transition-colors duration-200"
               as="a"
@@ -98,7 +98,7 @@
             />
           </span>
           <span
-            class="ml-1 text-sm font-medium group-hover:text-destructive transition-colors duration-200"
+            class="ms-1 text-sm font-medium group-hover:text-destructive transition-colors duration-200"
           >{{ likes_count }}</span>
         </button>
         <button
@@ -115,7 +115,7 @@
             />
           </span>
           <span
-            class="ml-1 text-sm font-medium transition-colors duration-200"
+            class="ms-1 text-sm font-medium transition-colors duration-200"
           >{{ likes_count }}</span>
         </button>
         <button
@@ -131,7 +131,7 @@
             />
           </span>
           <span
-            class="ml-1 text-sm font-medium group-hover:text-primary transition-colors duration-200"
+            class="ms-1 text-sm font-medium group-hover:text-primary transition-colors duration-200"
           >{{ post.comments_count }}</span>
         </button>
       </div>

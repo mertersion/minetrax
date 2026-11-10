@@ -2,7 +2,7 @@
   <DropdownMenu>
     <DropdownMenuTrigger as-child>
       <button
-        class="ml-4 relative hover:cursor-pointer"
+        class="ms-4 relative hover:cursor-pointer"
         @click="error ? fetchNotifications() : null"
       >
         <BellIcon
@@ -50,7 +50,7 @@
           class="text-sm text-primary hover:text-primary/80 font-medium transition-colors flex items-center"
           :preserve-state="false"
         >
-          <CheckCheckIcon class="w-4 h-4 mr-1" />
+          <CheckCheckIcon class="w-4 h-4 me-1" />
           {{ __("Mark all read") }}
         </inertia-link>
       </div>

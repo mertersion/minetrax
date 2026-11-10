@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'group relative px-4 py-3 border-l-4 transition-all duration-200 hover:bg-accent/50 cursor-pointer',
+      'group relative px-4 py-3 border-s-4 transition-all duration-200 hover:bg-accent/50 cursor-pointer',
       getNotificationBorderColor(),
       notification.read_at || gettingMarkedAsRead ?'opacity-60':'',
     ]"
@@ -28,7 +28,7 @@
                 {{ getNotificationTitle() }}
               </h4>
             </div>
-            <div class="flex items-center gap-2 shrink-0 ml-3">
+            <div class="flex items-center gap-2 shrink-0 ms-3">
               <!-- Mark as read button - only visible on hover for unread notifications -->
               <button
                 v-if="!notification.read_at"

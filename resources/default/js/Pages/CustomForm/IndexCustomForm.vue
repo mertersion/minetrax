@@ -63,13 +63,13 @@ const headerRow = [
         key: "flags",
         sortable: false,
         label: "",
-        class: "w-1/12 text-right",
+        class: "w-1/12 text-end",
     },
     {
         key: "status",
         label: __("Status"),
         sortable: true,
-        class: "w-1/12 hidden text-right md:table-cell",
+        class: "w-1/12 hidden text-end md:table-cell",
         filterable: {
             type: "multiselect",
             options: ["active", "disabled"]
@@ -79,13 +79,13 @@ const headerRow = [
         key: "created_at",
         label: __("Added"),
         sortable: true,
-        class: "w-1/12 hidden text-right md:table-cell",
+        class: "w-1/12 hidden text-end md:table-cell",
     },
     {
         key: "actions",
         label: __("Actions"),
         sortable: false,
-        class: "w-1/12 text-right",
+        class: "w-1/12 text-end",
     },
 ];
 </script>
@@ -113,7 +113,7 @@ const headerRow = [
               {{ item.title }}
             </DtRowItem>
 
-            <DtRowItem class="text-right">
+            <DtRowItem class="text-end">
               <span
                 v-tippy
                 :title="__('Registered Users Only')"
@@ -132,14 +132,14 @@ const headerRow = [
               />
             </DtRowItem>
 
-            <DtRowItem class="text-right hidden md:table-cell">
+            <DtRowItem class="text-end hidden md:table-cell">
               <CommonStatusBadge
                 :status="getStatusColor(item.status.value)"
                 :value="startCase(item.status.value)"
               />
             </DtRowItem>
 
-            <DtRowItem class="whitespace-nowrap hidden md:table-cell text-right">
+            <DtRowItem class="whitespace-nowrap hidden md:table-cell text-end">
               <span
                 v-tippy
                 :title="formatToDayDateString(item.created_at)"
@@ -149,7 +149,7 @@ const headerRow = [
             </DtRowItem>
 
             <td
-              class="px-6 py-4 space-x-2 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 space-x-2 text-sm font-medium text-end whitespace-nowrap"
             >
               <Button
                 v-tippy

@@ -89,7 +89,7 @@ const breadcrumbItems = [
         <Card class="w-full basis-2/6">
           <CardContent class="p-4">
             <h3 class="font-extrabold text-foreground flex items-center">
-              <ServerStackIcon class="w-6 mr-2" />
+              <ServerStackIcon class="w-6 me-2" />
               {{ __("Last 7 Days") }}
             </h3>
 
@@ -100,11 +100,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="users"
-                        class="w-5 text-primary mr-2"
+                        class="w-5 text-primary me-2"
                       />
                       {{ __("Unique Players") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.uniquePlayersCount }}
                     </td>
                   </tr>
@@ -113,11 +113,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="users"
-                        class="w-5 text-lime-500 mr-2"
+                        class="w-5 text-lime-500 me-2"
                       />
                       {{ __("New Players") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.newPlayersCount }}
                     </td>
                   </tr>
@@ -126,11 +126,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="users"
-                        class="w-5 text-muted-foreground mr-2"
+                        class="w-5 text-muted-foreground me-2"
                       />
                       {{ __("Old Players") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.oldPlayersCount }}
                     </td>
                   </tr>
@@ -139,11 +139,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="users"
-                        class="w-5 text-success mr-2"
+                        class="w-5 text-success me-2"
                       />
                       {{ __("Peak Online Players") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.peekOnlinePlayersCount ?? __('none') }}
                     </td>
                   </tr>
@@ -152,11 +152,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="joystick"
-                        class="w-5 text-lime-500 mr-2"
+                        class="w-5 text-lime-500 me-2"
                       />
                       {{ __("Avg TPS") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.averageTps ? millify(last7DaysStats.averageTps, {precision: 2}) : __('none') }}
                     </td>
                   </tr>
@@ -165,11 +165,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="joystick"
-                        class="w-5 text-destructive mr-2"
+                        class="w-5 text-destructive me-2"
                       />
                       {{ __("Lowest TPS") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.lowestTps ? millify(last7DaysStats.lowestTps, {precision: 2}) : __('none') }}
                     </td>
                   </tr>
@@ -178,21 +178,21 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="cpu"
-                        class="w-5 text-primary mr-2"
+                        class="w-5 text-primary me-2"
                       />
                       {{ __("Avg CPU Load") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.averageCpuLoad ? millify(last7DaysStats.averageCpuLoad, {precision: 2}) : __('none') }}
                     </td>
                   </tr>
 
                   <tr>
                     <td class="py-2 flex">
-                      <PowerIcon class="w-5 text-success mr-2" />
+                      <PowerIcon class="w-5 text-success me-2" />
                       {{ __("Longest Uptime") }}
                     </td>
-                    <td class="p-2 text-right">
+                    <td class="p-2 text-end">
                       {{ last7DaysStats.longestUptime ? secondsToHMS(last7DaysStats.longestUptime) : __('none') }}
                     </td>
                   </tr>
@@ -201,11 +201,11 @@ const breadcrumbItems = [
                     <td class="py-2 flex">
                       <Icon
                         name="toggle-off"
-                        class="w-5 text-destructive mr-2"
+                        class="w-5 text-destructive me-2"
                       />
                       {{ __("Restarts") }}
                     </td>
-                    <td class="p-2 pb-4 text-right">
+                    <td class="p-2 pb-4 text-end">
                       {{ last7DaysStats.noOfRestarts ?? __('none') }}
                     </td>
                   </tr>

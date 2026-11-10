@@ -11,7 +11,7 @@
       class="flex justify-center p-4 px-3"
     >
       <svg
-        class="w-5 h-5 mr-3 -ml-1 animate-spin text-primary dark:text-primary"
+        class="w-5 h-5 me-3 -ms-1 animate-spin text-primary dark:text-primary"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -79,7 +79,7 @@
               >
                 <span
                   v-tippy
-                  class="inline ml-1 text-xs text-muted-foreground focus:outline-hidden"
+                  class="inline ms-1 text-xs text-muted-foreground focus:outline-hidden"
                   :title="formatToDayDateString(comment.created_at)"
                 >
                   {{ formatTimeAgoToNow(comment.created_at) }}
@@ -136,7 +136,7 @@
         </form>
         <span
           v-if="bodyerror"
-          class="ml-2 text-xs text-destructive"
+          class="ms-2 text-xs text-destructive"
         >{{ bodyerror }}</span>
       </div>
     </div>

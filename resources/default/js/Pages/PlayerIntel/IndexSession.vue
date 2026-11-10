@@ -34,13 +34,13 @@ const headerRow = [
         key: "id",
         label: __("ID"),
         sortable: true,
-        class: "text-left w-12",
+        class: "text-start w-12",
     },
     {
         key: "country_id",
         label: __("Flag"),
         sortable: true,
-        class: "text-left w-12",
+        class: "text-start w-12",
     },
     {
         key: "player_displayname",
@@ -66,19 +66,19 @@ const headerRow = [
         key: "play_time",
         label: __("Play Time"),
         sortable: true,
-        class: "text-right",
+        class: "text-end",
     },
     {
         key: "afk_time",
         label: __("Afk Time"),
         sortable: true,
-        class: "text-right",
+        class: "text-end",
     },
     {
         key: "actions",
         label: __("Actions"),
         sortable: false,
-        class: "w-1 text-right",
+        class: "w-1 text-end",
     },
 ];
 
@@ -163,7 +163,7 @@ const breadcrumbItems = [
                     alt=""
                   >
                 </div>
-                <div class="ml-4">
+                <div class="ms-4">
                   <span class="text-sm font-extrabold text-foreground">
                     {{ item.player_displayname }} ({{ item.player_username }})
                   </span>
@@ -205,15 +205,15 @@ const breadcrumbItems = [
               </span>
             </DtRowItem>
 
-            <DtRowItem class="text-right">
+            <DtRowItem class="text-end">
               {{ secondsToHMS(item.play_time, true) }}
             </DtRowItem>
 
-            <DtRowItem class="text-right">
+            <DtRowItem class="text-end">
               {{ secondsToHMS(item.afk_time, true) }}
             </DtRowItem>
 
-            <td class="px-4 py-3 text-sm font-medium text-right whitespace-nowrap">
+            <td class="px-4 py-3 text-sm font-medium text-end whitespace-nowrap">
               <InertiaLink
                 v-tippy
                 as="a"

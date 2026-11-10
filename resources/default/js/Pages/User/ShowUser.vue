@@ -11,7 +11,7 @@
         <template #icon>
           <icon
             name="ban"
-            class="w-6 h-6 mr-4 text-destructive"
+            class="w-6 h-6 me-4 text-destructive"
           />
         </template>
         <template #body>
@@ -69,7 +69,7 @@
               <!-- Follow Button -->
               <div
                 v-if="$page.props.auth.user"
-                class="flex text-xs text-right md:text-medium"
+                class="flex text-xs text-end md:text-medium"
               >
                 <div class="p-4 space-x-2">
                   <Link
@@ -174,7 +174,7 @@
             </div>
 
             <!-- Profile info -->
-            <div class="justify-center w-full mt-3 ml-3 space-y-2">
+            <div class="justify-center w-full mt-3 ms-3 space-y-2">
               <!-- User basic-->
               <div>
                 <UserDisplayname
@@ -209,7 +209,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex justify-end mr-4">
+              <div class="flex justify-end me-4">
                 <p
                   v-tippy
                   class="text-sm font-medium leading-5 text-muted-foreground focus:outline-hidden"
@@ -464,7 +464,7 @@
 
               <div class="flex justify-between">
                 <span class="text-muted-foreground">{{ __("Email") }}</span>
-                <div class="text-right">
+                <div class="text-end">
                   <span class="font-semibold text-card-foreground block">{{ profileUser.email }}</span>
                   <span
                     v-if="profileUser.email_verified_at"

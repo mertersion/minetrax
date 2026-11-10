@@ -61,7 +61,7 @@ const headerRow = [
         key:"country_id",
         label: __("Flag"),
         sortable: true,
-        class:"text-left",
+        class:"text-start",
         filterable: {
             key:"country.name",
             type:"multiselect",
@@ -73,7 +73,7 @@ const headerRow = [
         key:"player_username",
         label: __("Username"),
         sortable: true,
-        class:"text-left",
+        class:"text-start",
         filterable: {
             type:"text",
         }
@@ -144,7 +144,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 </script>
@@ -203,7 +203,7 @@ const headerRow = [
                     alt=""
                   >
                 </div>
-                <div class="ml-4">
+                <div class="ms-4">
                   <Link
                     v-tippy
                     as="a"
@@ -280,7 +280,7 @@ const headerRow = [
             </DtRowItem>
 
             <td
-              class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+              class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
             >
               <ButtonGroup>
                 <Button

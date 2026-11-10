@@ -53,7 +53,7 @@
     <div class="flex items-center justify-end pt-6 gap-4">
       <JetActionMessage
         :on="form.recentlySuccessful"
-        class="mr-3"
+        class="me-3"
       >
         {{ __("Saved.") }}
       </JetActionMessage>

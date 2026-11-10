@@ -74,7 +74,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 </script>
@@ -166,7 +166,7 @@ const headerRow = [
           </DtRowItem>
 
           <td
-            class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+            class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
           >
             <ButtonGroup>
               <Button

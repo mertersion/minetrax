@@ -89,7 +89,7 @@
                 name="terms"
               />
 
-              <div class="ml-2">
+              <div class="ms-2">
                 {{ __("I agree to the") }} <a
                   target="_blank"
                   :href="route('terms.show')"
@@ -114,7 +114,7 @@
 
           <LoadingButton
             :loading="form.processing"
-            class="ml-4"
+            class="ms-4"
           >
             {{ __("Register") }}
           </LoadingButton>

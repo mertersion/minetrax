@@ -90,7 +90,7 @@
           >
             <div class="flex flex-col w-full space-y-1">
               <div class="relative flex items-center justify-center p-2">
-                <h3 class="ml-4 mr-5 font-bold text-foreground">
+                <h3 class="ms-4 me-5 font-bold text-foreground">
                   {{ __("Players") }}&nbsp;({{ playersList.length }})
                 </h3>
               </div>
@@ -118,12 +118,12 @@
                     :href="route('player.show', player.id)"
                   >
                     <span
-                      class="mr-1 font-semibold truncate text-foreground"
+                      class="me-1 font-semibold truncate text-foreground"
                     >{{ player.username }}</span>
                   </inertia-link>
                   <span
                     v-else
-                    class="mr-1 truncate text-foreground"
+                    class="me-1 truncate text-foreground"
                   >
                     {{ player.username }}
                   </span>

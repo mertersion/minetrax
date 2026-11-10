@@ -223,7 +223,7 @@ const breadcrumbItems = computed(() => [
               v-for="tab in tabList"
               :key="tab.value"
               :value="tab.value"
-              class="w-full justify-start py-2 px-4 text-left font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
+              class="w-full justify-start py-2 px-4 text-start font-medium rounded-lg transition-all duration-200 hover:bg-accent/10"
             >
               {{ __(tab.label) }}
             </TabsTrigger>
@@ -284,7 +284,7 @@ const breadcrumbItems = computed(() => [
                               name="skin_type"
                             >
                           </div>
-                          <div class="ml-2 text-sm">
+                          <div class="ms-2 text-sm">
                             <label
                               for="skin_type_steve"
                               class="font-medium text-foreground"
@@ -302,7 +302,7 @@ const breadcrumbItems = computed(() => [
                               name="skin_type"
                             >
                           </div>
-                          <div class="ml-2 text-sm">
+                          <div class="ms-2 text-sm">
                             <label
                               for="skin_type_alex"
                               class="font-medium text-foreground"

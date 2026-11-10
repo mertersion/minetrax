@@ -70,7 +70,7 @@ defineProps({
         :key="badge.id"
         v-tippy
         :title="badge.name"
-        class="inline mb-1 ml-0.5 text-destructive fill-current focus:outline-hidden"
+        class="inline mb-1 ms-0.5 text-destructive fill-current focus:outline-hidden"
         :class="iconClass"
         :src="badge.photo_url"
         :alt="badge.name"

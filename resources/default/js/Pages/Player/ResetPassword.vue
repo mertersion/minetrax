@@ -131,7 +131,7 @@ const breadcrumbItems = computed(() => [
         border-color="border-success"
       >
         <template #icon>
-          <CheckCircleIcon class="fill-current h-6 w-6 text-success mr-4" />
+          <CheckCircleIcon class="fill-current h-6 w-6 text-success me-4" />
         </template>
         <h2 class="text-xl">
           {{ __("Password changed successfully!") }}
@@ -182,7 +182,7 @@ const breadcrumbItems = computed(() => [
                   type="text"
                   name="new_password"
                   help-error-flex="flex-row"
-                  class="pr-12"
+                  class="pe-12"
                 />
                 <Button
                   v-tippy
@@ -191,7 +191,7 @@ const breadcrumbItems = computed(() => [
                   type="button"
                   variant="ghost"
                   size="sm"
-                  class="absolute right-0 top-[1.5rem] h-9 w-9 p-0"
+                  class="absolute end-0 top-[1.5rem] h-9 w-9 p-0"
                   @click="form.new_password = generateRandomString(16)"
                 >
                   <ArrowPathIcon class="w-5 h-5" />

@@ -55,19 +55,19 @@ const headerRow = [
         key:"total_play_time_needed",
         label: __("Play Time Needed"),
         sortable: true,
-        class:"text-right",
+        class:"text-end",
     },
     {
         key:"total_score_needed",
         label: __("Score Needed"),
         sortable: true,
-        class:"text-right",
+        class:"text-end",
     },
     {
         key:"players_count",
         label: __("Player Count"),
         sortable: false,
-        class:"text-right",
+        class:"text-end",
     },
     {
         key:"created_at",
@@ -78,7 +78,7 @@ const headerRow = [
         key:"actions",
         label: __("Actions"),
         sortable: false,
-        class:"w-1/12 text-right",
+        class:"w-1/12 text-end",
     },
 ];
 </script>
@@ -200,15 +200,15 @@ const headerRow = [
             </div>
           </td>
 
-          <DtRowItem class="text-right">
+          <DtRowItem class="text-end">
             {{ item.total_play_time_needed }}
           </DtRowItem>
 
-          <DtRowItem class="text-right">
+          <DtRowItem class="text-end">
             {{ item.total_score_needed }}
           </DtRowItem>
 
-          <DtRowItem class="text-right">
+          <DtRowItem class="text-end">
             {{ item.players_count }}
           </DtRowItem>
 
@@ -222,7 +222,7 @@ const headerRow = [
           </DtRowItem>
 
           <td
-            class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap"
+            class="px-6 py-4 text-sm font-medium text-end whitespace-nowrap"
           >
             <ButtonGroup>
               <Button

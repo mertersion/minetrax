@@ -8,7 +8,7 @@
       >
         <img
           :src="`/images/flags/flags-iso/shiny/48/${$page.props.localeIsoCode.toUpperCase()}.png`"
-          class="w-6 mr-2"
+          class="w-6 me-2"
         >
       </button>
     </DropdownMenuTrigger>
@@ -21,7 +21,7 @@
       >
         <img
           :src="`/images/flags/flags-iso/shiny/48/${locale.iso_code.toUpperCase()}.png`"
-          class="w-8 mr-2"
+          class="w-8 me-2"
         >
         <span>{{ locale.display }}</span>
       </DropdownMenuItem>

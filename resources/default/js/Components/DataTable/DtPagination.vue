@@ -113,7 +113,7 @@ function pagination(currentPage, pageCount) {
     <InertiaLink
       v-if="props.data.next_page_url"
       :href="data.next_page_url"
-      class="relative ml-3 inline-flex items-center rounded-md border border-border text-primary hover:bg-accent/50 px-4 py-2 text-sm font-medium"
+      class="relative ms-3 inline-flex items-center rounded-md border border-border text-primary hover:bg-accent/50 px-4 py-2 text-sm font-medium"
     >
       {{ __("Next") }}
     </InertiaLink>
@@ -133,7 +133,7 @@ function pagination(currentPage, pageCount) {
   >
     <InertiaLink
       :href="previousPage.url ?? '#'"
-      class="relative inline-flex items-center rounded-l-md px-2 py-2 text-foreground ring-1 ring-inset ring-border focus:z-20 focus:outline-offset-0"
+      class="relative inline-flex items-center rounded-s-md px-2 py-2 text-foreground ring-1 ring-inset ring-border focus:z-20 focus:outline-offset-0"
       :class="[previousPage.url == null ? 'pointer-events-none opacity-50' : 'hover:bg-accent hover:text-accent-foreground']"
     >
       <span class="sr-only">{{ __("Previous") }}</span>
@@ -161,7 +161,7 @@ function pagination(currentPage, pageCount) {
     <InertiaLink
       :disabled="!nextPage.url == null"
       :href="nextPage.url ?? '#'"
-      class="relative inline-flex items-center rounded-r-md px-2 py-2 text-foreground ring-1 ring-inset ring-border focus:z-20 focus:outline-offset-0"
+      class="relative inline-flex items-center rounded-e-md px-2 py-2 text-foreground ring-1 ring-inset ring-border focus:z-20 focus:outline-offset-0"
       :class="[nextPage.url == null ? 'pointer-events-none opacity-50' : 'hover:bg-accent hover:text-accent-foreground']"
     >
       <span class="sr-only">{{ __("Next") }}</span>

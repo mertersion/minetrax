@@ -5,7 +5,7 @@
         <div class="py-1">
           <slot name="icon">
             <svg
-              :class="cn('fill-current h-6 w-6 mr-4', colorVariants({ variant }))"
+              :class="cn('fill-current h-6 w-6 me-4', colorVariants({ variant }))"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -26,7 +26,7 @@
       </div>
       <button
         v-if="closeButton"
-        class="absolute rounded-full bg-card border border-border hover:bg-accent p-1 -top-2 -right-2 shadow-sm cursor-pointer"
+        class="absolute rounded-full bg-card border border-border hover:bg-accent p-1 -top-2 -end-2 shadow-sm cursor-pointer"
         @click="$emit('close')"
       >
         <XMarkIcon class="h-4 w-4" />
@@ -42,15 +42,15 @@ import { XMarkIcon } from "@heroicons/vue/24/outline";
 import { cva } from "class-variance-authority";
 
 const cardVariants = cva(
-    "relative border-l-4 shadow-sm",
+    "relative border-s-4 shadow-sm",
     {
         variants: {
             variant: {
-                default:"border-l-primary bg-card text-card-foreground",
-                destructive:"border-l-destructive bg-card text-card-foreground",
-                warning:"border-l-yellow-500 bg-card text-card-foreground",
-                success:"border-l-success bg-card text-card-foreground",
-                info:"border-l-info bg-card text-card-foreground",
+                default:"border-s-primary bg-card text-card-foreground",
+                destructive:"border-s-destructive bg-card text-card-foreground",
+                warning:"border-s-yellow-500 bg-card text-card-foreground",
+                success:"border-s-success bg-card text-card-foreground",
+                info:"border-s-info bg-card text-card-foreground",
             },
         },
         defaultVariants: {

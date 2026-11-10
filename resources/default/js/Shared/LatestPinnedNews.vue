@@ -9,7 +9,7 @@
       class="group relative overflow-hidden transition-shadow duration-300 hover:shadow-lg"
     >
       <!-- Pinned indicator -->
-      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+      <div class="absolute top-0 start-0 w-full h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
       <CardContent class="p-6 sm:p-8">
         <!-- Image section -->
